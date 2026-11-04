@@ -24,7 +24,8 @@ cd src && python3 -m heartbeat serve    # nur eine Version; liest beim ersten St
 # Dashboard: http://127.0.0.1:8765        Slack-Mockup: http://127.0.0.1:8765/slack
 ```
 
-Ohne Installation: die Online-Versionen bzw. die HTML-Dateien in `demo/` (siehe README). Sie sind vorberechnet, Aktionen werden dort nur angezeigt.
+Ohne Installation: die Online-Versionen bzw. die HTML-Dateien in `ergebnis/` (siehe README). Sie sind vorberechnet, Aktionen werden dort nur angezeigt.
+Neu bauen (z. B. nach neuen Daten): `python3 src/demo_build/build_demo.py src/demo_build/vorschau_links.json`. Das Skript liest den MVP nur, es verändert ihn nicht.
 
 Neue Läufe einspielen (z. B. das Excel-Protokoll vom 26.10.):
 - im Dashboard unter **Datenfluss & Testlauf** die Datei ablegen, oder

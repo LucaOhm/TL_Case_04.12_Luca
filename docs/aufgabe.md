@@ -1,6 +1,6 @@
 # Heartbeat für unsere Automationen
 
-*Original-Aufgabenstellung des Case. Die Antworten stehen im [README](../README.md#die-drei-antworten).*
+*Original-Aufgabenstellung des Case. Die Antworten stehen im [README](../README.md#4-die-drei-antworten).*
 
 Bei uns laufen 22 Automationen und Agenten: Make-Szenarien, Claude-Routinen in der Cloud und geplante Tasks auf einem Laptop. Keine davon meldet sich, wenn sie nicht läuft.
 
@@ -25,3 +25,8 @@ Bei uns laufen 22 Automationen und Agenten: Make-Szenarien, Claude-Routinen in d
 1. Was dein Ding am Morgen des 27.10. über den 26.10. melden würde. Die Läufe vom 26.10. bekommst du im Lauf der Session.
 2. Wo es laufen würde und wer die Meldung bekommt.
 3. Eine kurze Übergabenotiz (5 bis 7 Sätze): was es abdeckt, was nicht, und was du als Nächstes bauen würdest.
+
+## Zu den Daten
+
+Die drei Dateien liegen in [`data/`](../data/). Spalten der Lauf-Dateien: `lauf_id; automation_id; werkzeug; start; ende; status; anzahl; detail`.
+Owner einer Automation ist das Team aus der Spalte `genutzt_von`. Beim Start legt das MVP in `data/` eine Datenbank und ein lokales Geheimnis an; beide stehen nicht im Repo.

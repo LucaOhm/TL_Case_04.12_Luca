@@ -34,7 +34,20 @@ Gestern (Mo 26.10.): **31 von 32** geplanten Läufen gestartet. Ausgewertet wird
 
 ## Erwartung gegen Ergebnis
 
-Alle Auffälligkeiten, die ich vorher von Hand in der CSV gefunden hatte, meldet das Tool. Es meldet nichts zusätzlich. Der Abgleich steht im [README](../README.md#stimmen-die-ergebnisse-vergleich-vorhernachher).
+Alle Auffälligkeiten, die ich vorher von Hand in der CSV gefunden hatte, meldet das Tool. Es meldet nichts zusätzlich.
+
+Die Erwartung habe ich vor dem Testlauf von Hand aus der CSV vom 26.10. abgeleitet. Danach lief das Tool:
+
+| Was in den Läufen vom 26.10. steckt | Von Hand erwartet | Version 2 meldet |
+|---|---|---|
+| A08 CRM-Kontaktabgleich: 871 statt ≈ 1.184 Kontakte | Einbruch | ✅ P2 „−26,4 % gegenüber dem Median“ |
+| A17 Account-Anreicherung: 0 statt ≈ 38 Accounts | verdächtige Null | ✅ P2 „liefert 0 statt ≈ 38“ |
+| A19 Build-Log fehlt, obwohl der Laptop lief | Ausfall (2. Woche in Folge) | ✅ P2 „fehlt zum 2. Mal in Folge“ |
+| A01 MQL-Erinnerung lief um 08:30:02 und 08:30:44 | Doppellauf | ✅ P3 „doppelt gelaufen“ |
+| A02 postet Ticket #48404 zum zweiten Mal (erstmals 15.10.) | Hinweis | ✅ Info im Dashboard |
+| A09 Team-Report weiter bei 139 statt ≈ 165 | Störung bleibt offen | ✅ P2, 7. Lauf in Folge; Gegenprobe über A15 (211) und A10 (142) |
+| Soll-Läufe am Montag | 32, davon 31 gestartet | ✅ „31 von 32“ |
+| Alles andere (A04, A05, A07, A10, A12, A13, A15, A16, A18, A20, A21) | normal | ✅ keine Meldung |
 
 ## Was der Testlauf am Tool verändert hat
 

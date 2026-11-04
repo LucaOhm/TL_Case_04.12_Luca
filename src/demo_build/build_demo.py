@@ -6,8 +6,10 @@ Der MVP-Code (src/heartbeat) wird NICHT verändert, nur gelesen:
      Anfragen aus den vorgerechneten Daten statt vom Server.
   3. Aktionen (Übernehmen, Gelöst, Upload) sind in der Vorschau nur Anzeige. Im lokalen MVP wirken sie.
 
-Aufruf (aus dem Repo-Ordner):  python3 demo/build_demo.py
-Ergebnis:                     demo/heartbeat_bis_25-10.html, demo/heartbeat_mit_26-10.html
+Aufruf (aus dem Repo-Ordner):  python3 src/demo_build/build_demo.py src/demo_build/vorschau_links.json
+Ergebnis:                     ergebnis/MVP_bis_25-10.html, ergebnis/MVP_mit_26-10.html
+
+Hinweis: Dieses Skript gehört nicht zum MVP (src/heartbeat), es verpackt ihn nur für die Vorschau.
 """
 from __future__ import annotations
 
@@ -17,7 +19,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 os.environ["HEARTBEAT_BASE_URL"] = "HBBASE"   # Links in Slack-Nachrichten werden im Adapter aufgelöst
 
@@ -26,13 +28,13 @@ from heartbeat.app import App  # noqa: E402
 from heartbeat.store import Store  # noqa: E402
 
 WEB = ROOT / "src" / "heartbeat" / "web"
-OUT = ROOT / "demo"
+OUT = ROOT / "ergebnis"
 REPO = "https://github.com/LucaOhm/TradeLink_Case_04.12"
 
 VERSIONEN = [
-    {"datei": "heartbeat_bis_25-10", "titel": "Heartbeat bis 25.10.", "csv": ["laeufe_2026-10-12_bis_2026-10-25.csv"],
+    {"datei": "heartbeat_bis_25-10", "ausgabe": "MVP_bis_25-10", "titel": "Heartbeat bis 25.10.", "csv": ["laeufe_2026-10-12_bis_2026-10-25.csv"],
      "stand": "Läufe 12.–25.10.2026 (Ausgangsdaten)", "neueste": False},
-    {"datei": "heartbeat_mit_26-10", "titel": "Heartbeat Testlauf 26.10.", "csv": ["laeufe_2026-10-12_bis_2026-10-25.csv", "laeufe_2026-10-26.csv"],
+    {"datei": "heartbeat_mit_26-10", "ausgabe": "MVP_mit_26-10", "titel": "Heartbeat Testlauf 26.10.", "csv": ["laeufe_2026-10-12_bis_2026-10-25.csv", "laeufe_2026-10-26.csv"],
      "stand": "Läufe 12.–26.10.2026 (Testlauf mit den Läufen vom 26.10.)", "neueste": True},
 ]
 
@@ -237,11 +239,11 @@ def main(argv):
         daten = vorrechnen(v["csv"])
         other = VERSIONEN[1 - i]
         andere = (links[other["datei"]], "Zur anderen Version: " + other["titel"]) if other["datei"] in links else None
-        (OUT / (v["datei"] + ".html")).write_text(seite(v, daten, andere, False), encoding="utf-8")
+        (OUT / (v["ausgabe"] + ".html")).write_text(seite(v, daten, andere, False), encoding="utf-8")
         if artefakt_dir:
             artefakt_dir.mkdir(parents=True, exist_ok=True)
             (artefakt_dir / (v["datei"] + ".html")).write_text(seite(v, daten, andere, True), encoding="utf-8")
-        print("%-24s %5.1f MB  %d Briefing-Zeitpunkte, %d Läufe" % (v["datei"], (OUT / (v["datei"] + ".html")).stat().st_size / 1e6, len(daten["punkte"]), daten["laeufe"]))
+        print("%-24s %5.1f MB  %d Briefing-Zeitpunkte, %d Läufe" % (v["datei"], (OUT / (v["ausgabe"] + ".html")).stat().st_size / 1e6, len(daten["punkte"]), daten["laeufe"]))
 
 
 if __name__ == "__main__":

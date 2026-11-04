@@ -2,7 +2,7 @@
 
 **In einem Satz:** Heartbeat sagt dir jeden Morgen, ob deine Automationen gestern gelaufen sind, und meldet sich sofort, wenn bei Kunden etwas hängt.
 
-> 🎬 **Lieber schauen als lesen?** [Demovideo ansehen (2:18 Min.)](../video/heartbeat_demo.mp4) · Drehbuch für eine eigene Loom-Aufnahme: [loom-drehbuch.md](loom-drehbuch.md)
+> 🎬 **Lieber schauen als lesen?** [Demo-Video ansehen (2:18 Min.)](../ergebnis/Demo-Video_Mitarbeiter.mp4)
 > 👀 **Gleich ausprobieren:** [Online-Vorschau öffnen](https://claude.ai/artifact/Pkpyyp8toprAYnDvhPZfGt) → oben rechts „Geführte Tour“
 
 ---
