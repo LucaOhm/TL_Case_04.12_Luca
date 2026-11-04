@@ -29,7 +29,7 @@ from heartbeat.store import Store  # noqa: E402
 
 WEB = ROOT / "src" / "heartbeat" / "web"
 OUT = ROOT / "ergebnis"
-REPO = "https://github.com/LucaOhm/TradeLink_Case_04.12"
+REPO = "https://github.com/LucaOhm/TL_Case_04.12_Luca"
 
 VERSIONEN = [
     {"datei": "heartbeat_bis_25-10", "ausgabe": "MVP_bis_25-10", "titel": "Heartbeat bis 25.10.", "csv": ["laeufe_2026-10-12_bis_2026-10-25.csv"],

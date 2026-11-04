@@ -3,7 +3,7 @@
 **Frage:** Erkennt Heartbeat in neuen, vorher unbekannten Daten die richtigen Dinge, und nur die?
 **Vorgehen:** Erst die CSV von Hand durchgesehen und die Erwartung notiert, dann eingespielt und mit dem Briefing für Di 27.10. verglichen.
 **Daten:** [`data/laeufe_2026-10-26.csv`](../data/laeufe_2026-10-26.csv), 39 Läufe (L00404–L00442), letzter Lauf Mo 26.10. 20:00.
-**Ansehen:** [Version 1 bis 25.10.](https://claude.ai/artifact/CnsVpL8jFZXvqstir2ygk3) · [Version 2 mit 26.10.](https://claude.ai/artifact/Pkpyyp8toprAYnDvhPZfGt)
+**Ansehen:** [Version 1 bis 25.10.](https://lucaohm.github.io/TL_Case_04.12_Luca/ergebnis/MVP_bis_25-10.html) · [Version 2 mit 26.10.](https://lucaohm.github.io/TL_Case_04.12_Luca/ergebnis/MVP_mit_26-10.html)
 
 ## Ergebnis: Briefing Di 27.10., 07:00
 

@@ -6,11 +6,13 @@
 
 ## Hier prüfen
 
+**Alles auf einer Seite, ohne Anmeldung:** https://lucaohm.github.io/TL_Case_04.12_Luca/
+
 | | Was | Zeit |
 |---|---|---|
 | 📊 | [**Präsentation** (PDF, 7 Folien)](ergebnis/Praesentation_Heartbeat.pdf): Vorgehen, Leitplanken, Aufbau, Ergebnis | 5 Min. |
-| 🎬 | [**Demo-Video für Mitarbeiter**](ergebnis/Demo-Video_Mitarbeiter.mp4): So nutzt ein Team Heartbeat im Alltag | 2 Min. |
-| 🖱️ | **MVP ausprobieren:** [Stand bis 25.10.](https://claude.ai/artifact/CnsVpL8jFZXvqstir2ygk3) · [Testlauf 26.10.](https://claude.ai/artifact/Pkpyyp8toprAYnDvhPZfGt) (oben rechts „Geführte Tour“) | frei |
+| 🎬 | [**Demo-Video für Mitarbeiter**](https://lucaohm.github.io/TL_Case_04.12_Luca/#video): So nutzt ein Team Heartbeat im Alltag ([Datei](ergebnis/Demo-Video_Mitarbeiter.mp4)) | 2 Min. |
+| 🖱️ | **MVP ausprobieren:** [Stand bis 25.10.](https://lucaohm.github.io/TL_Case_04.12_Luca/ergebnis/MVP_bis_25-10.html) · [Testlauf 26.10.](https://lucaohm.github.io/TL_Case_04.12_Luca/ergebnis/MVP_mit_26-10.html) (oben rechts „Geführte Tour“) | frei |
 | 📄 | [**Die drei Antworten**](#4-die-drei-antworten) auf die Fragen des Case, hier weiter unten | 2 Min. |
 
 ---
@@ -95,6 +97,7 @@ Weiter offen ist der **Team-Report** (−16 %). Die Gegenprobe zeigt, dass es am
 | [`docs/`](docs/) | [Aufgabe](docs/aufgabe.md) · [Analyse](docs/analyse.md) · [Testlauf 26.10.](docs/testlauf-26-10.md) · [Onboarding](docs/onboarding.md) · [Betrieb & Sicherheit](docs/betrieb.md) |
 | [`data/`](data/) | Eingangsdaten (anonymisiert): 22 Automationen, Läufe 12.–25.10., Läufe 26.10. |
 | [`src/`](src/) · [`tests/`](tests/) | MVP-Code (Python, nur Standardbibliothek) und 46 automatische Tests |
+| `index.html` | Öffentliche Startseite (GitHub Pages) |
 
 Lokal starten (Python 3.9+, keine Pakete nötig):
 
