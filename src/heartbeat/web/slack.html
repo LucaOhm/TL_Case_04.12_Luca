@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heartbeat – Slack-Mockup</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f5bea'/%3E%3Cpath d='M4 17h6l3-8 5 15 3-7h7' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/app.css">
+<link rel="stylesheet" href="/static/slack.css">
+</head>
+<body>
+<div class="slk">
+  <nav class="slk-nav" aria-label="Slack-Navigation (Mockup)">
+    <h1>TradeLink <span class="pill">Mockup</span></h1>
+    <h2>Kanäle</h2>
+    <a href="#" tabindex="-1"># support</a><a href="#" tabindex="-1"># finance-freigaben</a><a href="#" tabindex="-1"># vertrieb</a><a href="#" tabindex="-1"># ops-heartbeat</a>
+    <h2>Apps</h2>
+    <a href="#" class="on" id="navhb">Heartbeat</a>
+    <h2>Zurück</h2>
+    <a id="todash" href="/">Dashboard öffnen ↗</a>
+  </nav>
+  <div class="slk-main">
+    <div class="slk-note">Mockup: So würden die Nachrichten in Slack ankommen. Es wird nichts gesendet. Die Buttons wirken auf dieselben Daten wie das Dashboard.</div>
+    <div class="slk-top">
+      <b>Heartbeat</b><span class="pill">App</span><span class="sp"></span>
+      <div class="stepper"><button id="prev" aria-label="Früher">‹</button><select id="when" aria-label="Zeitpunkt"></select><button id="next" aria-label="Später">›</button></div>
+      <span style="display:inline-flex;gap:6px;align-items:center;white-space:nowrap"><label for="who" style="color:var(--muted);font-size:12px">Nachrichten an</label><select id="who" style="border:1px solid var(--line-2);background:var(--surface);border-radius:8px;padding:6px 10px"></select></span>
+    </div>
+    <div class="slk-feed" id="feed" aria-live="polite"></div>
+  </div>
+</div>
+<div id="toast"></div>
+<script src="/static/blocks.js"></script>
+<script src="/static/slack.js"></script>
+</body>
+</html>

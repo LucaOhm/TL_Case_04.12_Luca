@@ -3,3 +3,6 @@
 # Testdaten von TradeLink: vertraulich, nicht in Git
 data/*
 !data/.gitkeep
+
+__pycache__/
+*.pyc
