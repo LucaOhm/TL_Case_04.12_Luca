@@ -23,7 +23,7 @@ BLIND_AFTER_S = 5 * 3600  # keine Einlieferung seit 5 Std. (länger als der 4-St
 BASE_WINDOW = 14         # Median über die letzten 14 vertrauenswürdigen Werte
 K_MAD = 4.0
 
-RUN_FAMILIES = ("fehler", "warnung", "wert", "eingefroren", "daten")
+RUN_FAMILIES = ("fehler", "warnung", "wert", "eingefroren", "daten", "doppelt", "referenz")
 
 
 def _band(vals: List[float], cfg: dict):
@@ -144,6 +144,9 @@ def _process(reg: Registry, a: dict, events: list, reset_ts: Optional[float], as
     open_: Dict[str, dict] = {}
     out: List[dict] = []
     prev_val: Optional[int] = None
+    same_run = 0                         # wie oft derselbe Wert direkt hintereinander kam
+    slot_ok: Dict[float, Run] = {}       # erster erfolgreicher Lauf je Soll-Zeitfenster
+    seen_refs: Dict[str, Run] = {}       # bereits erfolgreich gepostete Referenzen (z. B. Ticketnummern)
 
     def occur(fam, code, ts, run, slot, detail, extra=None):
         inc = open_.get(fam)
@@ -188,7 +191,21 @@ def _process(reg: Registry, a: dict, events: list, reset_ts: Optional[float], as
         elif run.klass == "warn" or SOFT.search(run.detail):
             flags["warnung"] = ("STATUS_WARNING", {})
 
-        reliable = "fehler" not in flags and "daten" not in flags and run.count is not None
+        good = "fehler" not in flags and "daten" not in flags
+        # Doppellauf: im selben Soll-Fenster lief schon ein erfolgreicher Lauf (Retry nach Fehler und Nachholen zählen nicht)
+        if good and slot is not None and slot in slot_ok and not run.manual:
+            p0 = slot_ok[slot]
+            flags["doppelt"] = ("RUN_DUPLICATE", {"vorher": p0.id, "vorher_t": iso(p0.start), "dieser_t": iso(run.start), "abstand_s": round(run.ts - p0.ts)})
+        if good and slot is not None and slot not in slot_ok:
+            slot_ok[slot] = run
+        # Referenz doppelt: dieselbe Ticketnummer wurde schon früher erfolgreich gepostet
+        if good and a["art"] == "ereignis":
+            for rf in refs(run.detail):
+                if rf in seen_refs:
+                    p0 = seen_refs[rf]
+                    flags["referenz"] = ("REF_DUPLICATE", {"ref": rf, "vorher": p0.id, "vorher_t": iso(p0.start)})
+                seen_refs.setdefault(rf, run)
+        reliable = good and run.count is not None
         v = run.count
         key = "we" if cfg.get("wochenende_getrennt") and run.start.weekday() >= 5 else "all"
         wert_flagged = False
@@ -210,12 +227,13 @@ def _process(reg: Registry, a: dict, events: list, reset_ts: Optional[float], as
             wert_flagged = "wert" in flags
             if not wert_flagged:
                 trusted[key].append((run.ts, v))
-            # eingefroren: gleicher großer Wert wie im Lauf davor
-            if cfg["modus"] == "band" and v is not None and v >= 100 and prev_val == v:
+            # eingefroren: derselbe große Wert 3× in Folge (2× kommt bei stabilem Bestand normal vor)
+            same_run = same_run + 1 if prev_val == v else 1
+            if cfg["modus"] == "band" and v is not None and v >= 100 and same_run >= 2:
                 if wert_flagged:
                     flags["_frozen_note"] = ("NOTE", {})
-                else:
-                    flags["eingefroren"] = ("VOLUME_FROZEN", {"wert": v})
+                elif same_run >= 3:
+                    flags["eingefroren"] = ("VOLUME_FROZEN", {"wert": v, "mal": same_run})
         if reliable:
             prev_val = v
 

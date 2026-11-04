@@ -1,0 +1,23 @@
+automation_id;name;werkzeug;ausloeser;zeitplan;liefert;anzahl_bedeutet;genutzt_von
+A01;MQL-Erinnerung;Make;Zeitplan;Mo–Fr 08:30;Erinnerung im Vertriebskanal plus CRM-Aufgabe für jedes neue MQL ohne Kontakt;Erinnerungen gepostet;Vertrieb
+A02;Support-Ticket-Triage;Make;Ereignis;bei jedem neuen Support-Ticket;Ticket-Zusammenfassung im Support-Kanal;Tickets gepostet;Support
+A03;Abo-Anlage nach Abschluss;Make;Ereignis;bei jedem gewonnenen Deal;Freigabe-Post für das neue Abo;Freigaben gepostet;Finance
+A04;Transkript-Import;Make;Zeitplan;täglich 06:00;Call-Transkripte ins Wissens-Repo;Transkripte importiert;alle Teams
+A05;LinkedIn-Entwürfe;Make;Zeitplan;Mo 09:00;Wochenentwürfe für LinkedIn-Posts im Marketing-Kanal;Entwürfe gepostet;Marketing
+A06;Release-Post;Make;Zeitplan;Do 10:00;Release-Notiz im Team-Kanal;Posts;alle Teams
+A07;Kunden-Agent-Übergabe;Make;Zeitplan;alle 4 Std. (00, 04, 08, 12, 16, 20 Uhr);offene Übergaben vom Kunden-Chat-Agenten an den Account Owner;Übergaben zugewiesen;Account Owner
+A08;CRM-Kontaktabgleich;Make;Zeitplan;täglich 02:00;gleicht Kontakte zwischen Produkt und CRM ab;Kontakte abgeglichen;Vertrieb, Marketing
+A09;Team-Report-Daten;Claude-Routine (Cloud);Zeitplan;täglich 06:00;Daten für die täglichen Team-Dashboards;Deals im Report;Vertriebsteams
+A10;Deal-Score;Claude-Routine (Cloud);Zeitplan;Mo–Fr 05:30;Score auf jedem offenen Deal, Grundlage für den Forecast;Deals bewertet;Geschäftsführung
+A11;Feedback Wissensbasis;Claude-Routine (Cloud);Zeitplan;täglich 05:30;verarbeitet Korrektur-Kommentare zur Wissensbasis;Kommentare verarbeitet;alle Teams
+A12;Wochen-Spotlight;Claude-Routine (Cloud);Zeitplan;Mo 06:00;Folien für das Montags-All-Hands;Folien erstellt;alle Teams
+A13;Check-in-Vorlage Team 3;Claude-Routine (Cloud);Zeitplan;Mo 04:30;Seite für das wöchentliche Team-Meeting;Seiten angelegt;Team 3
+A14;Produktfolie All-Hands;Claude-Routine (Cloud);Zeitplan;Fr 07:00;eine Folie zu den Produkt-Neuheiten der Woche;Folien erstellt;alle Teams
+A15;Pipeline-Wochenreport;Claude-Routine (Cloud);Zeitplan;Mo 07:30;Wochenreport über alle offenen Deals;Deals im Report;Geschäftsführung
+A16;Rechnungs-Snapshot;Geplanter Task (Laptop);Zeitplan;Mo–Fr 07:06;Snapshot der offenen Rechnungen fürs Finance-Dashboard;Rechnungen im Snapshot;Finance
+A17;Account-Anreicherung;Geplanter Task (Laptop);Zeitplan;Mo 08:00;reichert neue Firmen im CRM mit Größe und Branche an;Accounts angereichert;Vertrieb
+A18;Tagesplanung;Geplanter Task (Laptop);Zeitplan;Mo–Fr 07:30;Tagesplan aus der Aufgabenliste;Aufgaben im Plan;Daniel
+A19;Build-Log;Geplanter Task (Laptop);Zeitplan;Mo 07:45;Wochen-Eintrag ins Build-Log;Einträge;Daniel
+A20;Postfach-Scan;Geplanter Task (Laptop);Zeitplan;stündlich Mo–Fr 08:00–18:00;macht aus neuen Mails Aufgabenvorschläge;Vorschläge angelegt;Daniel
+A21;LinkedIn-Feedback;Geplanter Task (Laptop);Zeitplan;Mo–Fr 18:00;übernimmt Feedback aus dem LinkedIn-Kanal in die Autorenprofile;Feedbacks übernommen;Marketing
+A22;Newsletter-Klicks;Make;Zeitplan;Di 09:00;legt Aufgaben für Kunden an, die im Newsletter geklickt haben;Aufgaben angelegt;Account Owner

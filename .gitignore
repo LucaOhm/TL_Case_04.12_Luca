@@ -1,8 +1,11 @@
 .DS_Store
-
-# Testdaten von TradeLink: vertraulich, nicht in Git
-data/*
-!data/.gitkeep
-
 __pycache__/
 *.pyc
+
+# Laufzeit-Dateien des MVP (werden beim Start neu erzeugt)
+data/*.db
+data/*.db-journal
+data/secrets.json
+
+# Lokale Einstellungen
+.claude/

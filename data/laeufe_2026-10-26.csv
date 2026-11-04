@@ -1,0 +1,40 @@
+lauf_id;automation_id;werkzeug;start;ende;status;anzahl;detail
+L00404;A07;Make;2026-10-26 00:00:01;2026-10-26 00:00:06;success;1;1 Übergaben zugewiesen
+L00405;A08;Make;2026-10-26 02:00:06;2026-10-26 02:00:25;success;871;871 Kontakte abgeglichen
+L00406;A07;Make;2026-10-26 04:00:04;2026-10-26 04:00:31;success;0;0 Übergaben zugewiesen
+L00407;A13;Claude-Routine (Cloud);2026-10-26 04:30:53;2026-10-26 04:34:07;completed;1;Seite angelegt
+L00408;A11;Claude-Routine (Cloud);2026-10-26 05:30:26;2026-10-26 05:35:55;completed;1;1 Kommentare verarbeitet
+L00409;A10;Claude-Routine (Cloud);2026-10-26 05:30:43;2026-10-26 05:35:05;completed;142;142 Deals bewertet
+L00410;A04;Make;2026-10-26 06:00:05;2026-10-26 06:00:15;success;19;19 Transkripte importiert
+L00411;A12;Claude-Routine (Cloud);2026-10-26 06:00:07;2026-10-26 06:07:16;completed;4;4 Folien erstellt
+L00412;A09;Claude-Routine (Cloud);2026-10-26 06:00:17;2026-10-26 06:02:08;completed;139;Report aktualisiert, 139 Deals
+L00413;A16;Geplanter Task (Laptop);2026-10-26 07:06:23;2026-10-26 07:08:11;ok;47;Snapshot geschrieben, 47 Rechnungen
+L00414;A15;Claude-Routine (Cloud);2026-10-26 07:30:08;2026-10-26 07:38:06;completed;211;Report gepostet, 211 Deals
+L00415;A18;Geplanter Task (Laptop);2026-10-26 07:30:27;2026-10-26 07:33:09;ok;6;Tagesplan mit 6 Aufgaben
+L00416;A07;Make;2026-10-26 08:00:05;2026-10-26 08:00:31;success;1;1 Übergaben zugewiesen
+L00417;A20;Geplanter Task (Laptop);2026-10-26 08:00:14;2026-10-26 08:02:15;ok;0;0 Vorschläge angelegt
+L00418;A17;Geplanter Task (Laptop);2026-10-26 08:00:22;2026-10-26 08:02:58;ok;0;0 Accounts angereichert
+L00419;A02;Make;2026-10-26 08:21:36;2026-10-26 08:21:43;success;1;Ticket #48487 gepostet
+L00420;A01;Make;2026-10-26 08:30:02;2026-10-26 08:30:33;success;2;2 Erinnerungen gepostet
+L00421;A01;Make;2026-10-26 08:30:44;2026-10-26 08:31:16;success;2;2 Erinnerungen gepostet
+L00422;A05;Make;2026-10-26 09:00:01;2026-10-26 09:00:41;success;5;5 Entwürfe gepostet
+L00423;A20;Geplanter Task (Laptop);2026-10-26 09:00:16;2026-10-26 09:01:28;ok;1;1 Vorschläge angelegt
+L00424;A02;Make;2026-10-26 09:16:07;2026-10-26 09:16:15;success;1;Ticket #48779 gepostet
+L00425;A20;Geplanter Task (Laptop);2026-10-26 10:00:37;2026-10-26 10:02:42;ok;1;1 Vorschläge angelegt
+L00426;A20;Geplanter Task (Laptop);2026-10-26 11:00:09;2026-10-26 11:04:03;ok;0;0 Vorschläge angelegt
+L00427;A02;Make;2026-10-26 11:16:09;2026-10-26 11:16:25;success;1;Ticket #48404 gepostet
+L00428;A02;Make;2026-10-26 11:28:05;2026-10-26 11:28:45;success;1;Ticket #48916 gepostet
+L00429;A07;Make;2026-10-26 12:00:02;2026-10-26 12:00:34;success;0;0 Übergaben zugewiesen
+L00430;A20;Geplanter Task (Laptop);2026-10-26 12:00:13;2026-10-26 12:02:08;ok;1;1 Vorschläge angelegt
+L00431;A02;Make;2026-10-26 12:08:31;2026-10-26 12:08:56;success;1;Ticket #48806 gepostet
+L00432;A20;Geplanter Task (Laptop);2026-10-26 13:00:22;2026-10-26 13:03:16;ok;2;2 Vorschläge angelegt
+L00433;A20;Geplanter Task (Laptop);2026-10-26 14:00:39;2026-10-26 14:04:40;ok;1;1 Vorschläge angelegt
+L00434;A20;Geplanter Task (Laptop);2026-10-26 15:00:16;2026-10-26 15:04:15;ok;1;1 Vorschläge angelegt
+L00435;A07;Make;2026-10-26 16:00:05;2026-10-26 16:00:26;success;3;3 Übergaben zugewiesen
+L00436;A20;Geplanter Task (Laptop);2026-10-26 16:00:14;2026-10-26 16:02:18;ok;3;3 Vorschläge angelegt
+L00437;A02;Make;2026-10-26 16:06:33;2026-10-26 16:06:49;success;1;Ticket #48962 gepostet
+L00438;A20;Geplanter Task (Laptop);2026-10-26 17:00:07;2026-10-26 17:02:30;ok;1;1 Vorschläge angelegt
+L00439;A02;Make;2026-10-26 17:59:15;2026-10-26 17:59:35;success;1;Ticket #48443 gepostet
+L00440;A20;Geplanter Task (Laptop);2026-10-26 18:00:28;2026-10-26 18:03:25;ok;1;1 Vorschläge angelegt
+L00441;A21;Geplanter Task (Laptop);2026-10-26 18:00:45;2026-10-26 18:02:25;ok;0;0 Feedbacks übernommen
+L00442;A07;Make;2026-10-26 20:00:06;2026-10-26 20:00:08;success;0;0 Übergaben zugewiesen

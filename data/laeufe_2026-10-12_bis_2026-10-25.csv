@@ -1,0 +1,404 @@
+lauf_id;automation_id;werkzeug;start;ende;status;anzahl;detail
+L00001;A07;Make;2026-10-12 00:00:03;2026-10-12 00:00:39;success;0;0 Übergaben zugewiesen
+L00002;A08;Make;2026-10-12 02:00:00;2026-10-12 02:00:37;success;1205;1205 Kontakte abgeglichen
+L00003;A07;Make;2026-10-12 04:00:04;2026-10-12 04:00:10;success;2;2 Übergaben zugewiesen
+L00004;A13;Claude-Routine (Cloud);2026-10-12 04:31:21;2026-10-12 04:35:03;completed;1;Seite angelegt
+L00005;A11;Claude-Routine (Cloud);2026-10-12 05:31:01;2026-10-12 05:34:23;completed;0;0 Kommentare verarbeitet
+L00006;A10;Claude-Routine (Cloud);2026-10-12 05:31:07;2026-10-12 05:37:29;completed;142;142 Deals bewertet
+L00007;A04;Make;2026-10-12 06:00:02;2026-10-12 06:00:35;success;11;11 Transkripte importiert
+L00008;A12;Claude-Routine (Cloud);2026-10-12 06:00:57;2026-10-12 06:04:05;completed;3;3 Folien erstellt
+L00009;A09;Claude-Routine (Cloud);2026-10-12 06:01:08;2026-10-12 06:07:27;completed;166;Report aktualisiert, 166 Deals
+L00010;A16;Geplanter Task (Laptop);2026-10-12 07:06:40;2026-10-12 07:10:34;ok;43;Snapshot geschrieben, 43 Rechnungen
+L00011;A18;Geplanter Task (Laptop);2026-10-12 07:30:38;2026-10-12 07:33:34;ok;8;Tagesplan mit 8 Aufgaben
+L00012;A15;Claude-Routine (Cloud);2026-10-12 07:31:30;2026-10-12 07:33:38;completed;214;Report gepostet, 214 Deals
+L00013;A19;Geplanter Task (Laptop);2026-10-12 07:45:30;2026-10-12 07:48:11;ok;1;Eintrag geschrieben
+L00014;A07;Make;2026-10-12 08:00:03;2026-10-12 08:00:33;success;1;1 Übergaben zugewiesen
+L00015;A20;Geplanter Task (Laptop);2026-10-12 08:00:18;2026-10-12 08:03:56;ok;0;0 Vorschläge angelegt
+L00016;A17;Geplanter Task (Laptop);2026-10-12 08:00:37;2026-10-12 08:01:30;ok;38;38 Accounts angereichert
+L00017;A02;Make;2026-10-12 08:18:43;2026-10-12 08:19:09;success;1;Ticket #48662 gepostet
+L00018;A01;Make;2026-10-12 08:30:05;2026-10-12 08:30:20;success;2;2 Erinnerungen gepostet
+L00019;A02;Make;2026-10-12 08:44:38;2026-10-12 08:44:47;success;1;Ticket #49293 gepostet
+L00020;A05;Make;2026-10-12 09:00:04;2026-10-12 09:00:20;success;5;5 Entwürfe gepostet
+L00021;A20;Geplanter Task (Laptop);2026-10-12 09:00:39;2026-10-12 09:04:48;ok;5;5 Vorschläge angelegt
+L00022;A20;Geplanter Task (Laptop);2026-10-12 10:00:06;2026-10-12 10:04:07;ok;2;2 Vorschläge angelegt
+L00023;A02;Make;2026-10-12 10:48:28;2026-10-12 10:48:40;success;1;Ticket #48666 gepostet
+L00024;A20;Geplanter Task (Laptop);2026-10-12 11:00:35;2026-10-12 11:02:21;ok;2;2 Vorschläge angelegt
+L00025;A02;Make;2026-10-12 11:38:43;2026-10-12 11:39:04;success;1;Ticket #48693 gepostet
+L00026;A07;Make;2026-10-12 12:00:06;2026-10-12 12:00:43;success;3;3 Übergaben zugewiesen
+L00027;A20;Geplanter Task (Laptop);2026-10-12 12:00:41;2026-10-12 12:04:46;ok;1;1 Vorschläge angelegt
+L00028;A20;Geplanter Task (Laptop);2026-10-12 13:00:33;2026-10-12 13:01:33;ok;3;3 Vorschläge angelegt
+L00029;A20;Geplanter Task (Laptop);2026-10-12 14:00:12;2026-10-12 14:01:29;ok;2;2 Vorschläge angelegt
+L00030;A20;Geplanter Task (Laptop);2026-10-12 15:00:27;2026-10-12 15:01:52;ok;1;1 Vorschläge angelegt
+L00031;A02;Make;2026-10-12 15:33:02;2026-10-12 15:33:14;success;1;Ticket #48387 gepostet
+L00032;A07;Make;2026-10-12 16:00:03;2026-10-12 16:00:12;success;3;3 Übergaben zugewiesen
+L00033;A20;Geplanter Task (Laptop);2026-10-12 16:00:40;2026-10-12 16:04:48;ok;0;0 Vorschläge angelegt
+L00034;A02;Make;2026-10-12 16:40:35;2026-10-12 16:40:43;success;1;Ticket #48729 gepostet
+L00035;A20;Geplanter Task (Laptop);2026-10-12 17:00:22;2026-10-12 17:02:47;ok;1;1 Vorschläge angelegt
+L00036;A02;Make;2026-10-12 17:34:13;2026-10-12 17:34:44;success;1;Ticket #48855 gepostet
+L00037;A20;Geplanter Task (Laptop);2026-10-12 18:00:10;2026-10-12 18:01:20;ok;0;0 Vorschläge angelegt
+L00038;A21;Geplanter Task (Laptop);2026-10-12 18:00:29;2026-10-12 18:03:59;ok;0;0 Feedbacks übernommen
+L00039;A02;Make;2026-10-12 18:39:34;2026-10-12 18:39:42;success;1;Ticket #49000 gepostet
+L00040;A02;Make;2026-10-12 19:26:46;2026-10-12 19:27:26;success;1;Ticket #48622 gepostet
+L00041;A07;Make;2026-10-12 20:00:06;2026-10-12 20:00:21;success;1;1 Übergaben zugewiesen
+L00042;A07;Make;2026-10-13 00:00:03;2026-10-13 00:00:15;success;1;1 Übergaben zugewiesen
+L00043;A08;Make;2026-10-13 02:00:00;2026-10-13 02:00:20;success;1199;1199 Kontakte abgeglichen
+L00044;A07;Make;2026-10-13 04:00:00;2026-10-13 04:00:02;success;0;0 Übergaben zugewiesen
+L00045;A11;Claude-Routine (Cloud);2026-10-13 05:30:29;2026-10-13 05:34:17;completed;2;2 Kommentare verarbeitet
+L00046;A10;Claude-Routine (Cloud);2026-10-13 05:30:37;2026-10-13 05:35:25;completed;143;143 Deals bewertet
+L00047;A04;Make;2026-10-13 06:00:03;2026-10-13 06:00:12;success;8;8 Transkripte importiert
+L00048;A09;Claude-Routine (Cloud);2026-10-13 06:00:29;2026-10-13 06:03:58;completed;165;Report aktualisiert, 165 Deals
+L00049;A16;Geplanter Task (Laptop);2026-10-13 07:06:06;2026-10-13 07:08:17;ok;41;Snapshot geschrieben, 41 Rechnungen
+L00050;A18;Geplanter Task (Laptop);2026-10-13 07:30:26;2026-10-13 07:34:41;ok;8;Tagesplan mit 8 Aufgaben
+L00051;A07;Make;2026-10-13 08:00:00;2026-10-13 08:00:31;success;1;1 Übergaben zugewiesen
+L00052;A20;Geplanter Task (Laptop);2026-10-13 08:00:07;2026-10-13 08:01:47;ok;0;0 Vorschläge angelegt
+L00053;A01;Make;2026-10-13 08:30:04;2026-10-13 08:30:07;success;0;keine neuen MQLs
+L00054;A22;Make;2026-10-13 09:00:00;2026-10-13 09:00:02;success;5;5 Aufgaben angelegt
+L00055;A20;Geplanter Task (Laptop);2026-10-13 09:00:12;2026-10-13 09:02:28;ok;0;0 Vorschläge angelegt
+L00056;A03;Make;2026-10-13 09:03:10;2026-10-13 09:03:27;success;1;Freigabe-Post gepostet
+L00057;A20;Geplanter Task (Laptop);2026-10-13 10:00:22;2026-10-13 10:01:51;ok;1;1 Vorschläge angelegt
+L00058;A20;Geplanter Task (Laptop);2026-10-13 11:00:44;2026-10-13 11:02:26;ok;3;3 Vorschläge angelegt
+L00059;A03;Make;2026-10-13 11:29:41;2026-10-13 11:29:46;success;1;Freigabe-Post gepostet
+L00060;A07;Make;2026-10-13 12:00:06;2026-10-13 12:00:17;success;1;1 Übergaben zugewiesen
+L00061;A20;Geplanter Task (Laptop);2026-10-13 12:00:10;2026-10-13 12:01:43;ok;1;1 Vorschläge angelegt
+L00062;A02;Make;2026-10-13 12:40:50;2026-10-13 12:41:16;success;1;Ticket #48802 gepostet
+L00063;A20;Geplanter Task (Laptop);2026-10-13 13:00:28;2026-10-13 13:03:10;ok;5;5 Vorschläge angelegt
+L00064;A20;Geplanter Task (Laptop);2026-10-13 14:00:32;2026-10-13 14:01:45;ok;3;3 Vorschläge angelegt
+L00065;A20;Geplanter Task (Laptop);2026-10-13 15:00:39;2026-10-13 15:02:55;ok;3;3 Vorschläge angelegt
+L00066;A02;Make;2026-10-13 15:11:52;2026-10-13 15:12:03;success;1;Ticket #48245 gepostet
+L00067;A07;Make;2026-10-13 16:00:05;2026-10-13 16:00:24;success;0;0 Übergaben zugewiesen
+L00068;A20;Geplanter Task (Laptop);2026-10-13 16:00:21;2026-10-13 16:02:00;ok;1;1 Vorschläge angelegt
+L00069;A20;Geplanter Task (Laptop);2026-10-13 17:00:41;2026-10-13 17:01:48;ok;1;1 Vorschläge angelegt
+L00070;A20;Geplanter Task (Laptop);2026-10-13 18:00:18;2026-10-13 18:01:47;ok;1;1 Vorschläge angelegt
+L00071;A21;Geplanter Task (Laptop);2026-10-13 18:00:43;2026-10-13 18:04:21;ok;0;0 Feedbacks übernommen
+L00072;A02;Make;2026-10-13 18:49:01;2026-10-13 18:49:19;success;1;Ticket #48586 gepostet
+L00073;A02;Make;2026-10-13 19:00:22;2026-10-13 19:00:25;success;1;Ticket #48564 gepostet
+L00074;A02;Make;2026-10-13 19:50:23;2026-10-13 19:50:53;success;1;Ticket #48747 gepostet
+L00075;A07;Make;2026-10-13 20:00:01;2026-10-13 20:00:29;success;1;1 Übergaben zugewiesen
+L00076;A07;Make;2026-10-14 00:00:01;2026-10-14 00:00:32;success;1;1 Übergaben zugewiesen
+L00077;A08;Make;2026-10-14 02:00:00;2026-10-14 02:00:28;success;1211;1211 Kontakte abgeglichen
+L00078;A07;Make;2026-10-14 04:00:06;2026-10-14 04:00:27;success;0;0 Übergaben zugewiesen
+L00079;A10;Claude-Routine (Cloud);2026-10-14 05:30:35;2026-10-14 05:36:32;completed;0;0 Deals bewertet
+L00080;A11;Claude-Routine (Cloud);2026-10-14 05:30:38;2026-10-14 05:39:13;completed;0;0 Kommentare verarbeitet
+L00081;A04;Make;2026-10-14 06:00:06;2026-10-14 06:00:12;error;0;HTTP 401 Unauthorized: Token abgelaufen
+L00082;A09;Claude-Routine (Cloud);2026-10-14 06:00:59;2026-10-14 06:07:28;completed;163;Report aktualisiert, 163 Deals
+L00083;A16;Geplanter Task (Laptop);2026-10-14 07:06:15;2026-10-14 07:10:16;ok;41;Snapshot geschrieben, 41 Rechnungen
+L00084;A02;Make;2026-10-14 07:11:02;2026-10-14 07:11:17;success;1;Ticket #48864 gepostet
+L00085;A18;Geplanter Task (Laptop);2026-10-14 07:30:18;2026-10-14 07:33:05;ok;8;Tagesplan mit 8 Aufgaben
+L00086;A07;Make;2026-10-14 08:00:02;2026-10-14 08:00:42;success;0;0 Übergaben zugewiesen
+L00087;A20;Geplanter Task (Laptop);2026-10-14 08:00:14;2026-10-14 08:03:02;ok;0;0 Vorschläge angelegt
+L00088;A02;Make;2026-10-14 08:00:47;2026-10-14 08:00:58;success;1;Ticket #49118 gepostet
+L00089;A02;Make;2026-10-14 08:08:30;2026-10-14 08:08:36;success;1;Ticket #49262 gepostet
+L00090;A01;Make;2026-10-14 08:30:04;2026-10-14 08:30:31;success;0;keine neuen MQLs
+L00091;A20;Geplanter Task (Laptop);2026-10-14 09:00:38;2026-10-14 09:02:28;ok;3;3 Vorschläge angelegt
+L00092;A04;Make;2026-10-14 09:12:37;2026-10-14 09:13:09;success;9;9 Transkripte importiert (manuell gestartet)
+L00093;A20;Geplanter Task (Laptop);2026-10-14 10:00:43;2026-10-14 10:04:45;ok;1;1 Vorschläge angelegt
+L00094;A02;Make;2026-10-14 10:47:46;2026-10-14 10:48:08;success;1;Ticket #48943 gepostet
+L00095;A20;Geplanter Task (Laptop);2026-10-14 11:00:18;2026-10-14 11:04:05;ok;0;0 Vorschläge angelegt
+L00096;A07;Make;2026-10-14 12:00:02;2026-10-14 12:00:34;success;3;3 Übergaben zugewiesen
+L00097;A20;Geplanter Task (Laptop);2026-10-14 12:00:12;2026-10-14 12:01:20;ok;0;0 Vorschläge angelegt
+L00098;A02;Make;2026-10-14 12:00:59;2026-10-14 12:01:02;success;1;Ticket #49139 gepostet
+L00099;A20;Geplanter Task (Laptop);2026-10-14 13:00:36;2026-10-14 13:02:29;ok;1;1 Vorschläge angelegt
+L00100;A02;Make;2026-10-14 13:05:49;2026-10-14 13:06:27;success;1;Ticket #48764 gepostet
+L00101;A02;Make;2026-10-14 13:59:54;2026-10-14 14:00:13;success;1;Ticket #48462 gepostet
+L00102;A20;Geplanter Task (Laptop);2026-10-14 14:00:22;2026-10-14 14:04:25;ok;3;3 Vorschläge angelegt
+L00103;A20;Geplanter Task (Laptop);2026-10-14 15:00:40;2026-10-14 15:03:03;ok;5;5 Vorschläge angelegt
+L00104;A07;Make;2026-10-14 16:00:00;2026-10-14 16:00:17;success;1;1 Übergaben zugewiesen
+L00105;A20;Geplanter Task (Laptop);2026-10-14 16:00:45;2026-10-14 16:03:16;ok;1;1 Vorschläge angelegt
+L00106;A02;Make;2026-10-14 16:10:36;2026-10-14 16:11:16;success;1;Ticket #48244 gepostet
+L00107;A02;Make;2026-10-14 16:25:53;2026-10-14 16:26:11;success;1;Ticket #48724 gepostet
+L00108;A02;Make;2026-10-14 16:28:59;2026-10-14 16:29:14;success;1;Ticket #48985 gepostet
+L00109;A20;Geplanter Task (Laptop);2026-10-14 17:00:16;2026-10-14 17:01:41;ok;1;1 Vorschläge angelegt
+L00110;A21;Geplanter Task (Laptop);2026-10-14 18:00:14;2026-10-14 18:02:13;ok;0;0 Feedbacks übernommen
+L00111;A20;Geplanter Task (Laptop);2026-10-14 18:00:40;2026-10-14 18:04:08;ok;1;1 Vorschläge angelegt
+L00112;A02;Make;2026-10-14 19:36:37;2026-10-14 19:37:15;success;1;Ticket #48973 gepostet
+L00113;A07;Make;2026-10-14 20:00:00;2026-10-14 20:00:05;warning;3;3 Übergaben zugewiesen, Rate-Limit erreicht und automatisch wiederholt
+L00114;A07;Make;2026-10-15 00:00:00;2026-10-15 00:00:06;success;1;1 Übergaben zugewiesen
+L00115;A08;Make;2026-10-15 02:00:06;2026-10-15 02:00:12;success;1163;1163 Kontakte abgeglichen
+L00116;A07;Make;2026-10-15 04:00:06;2026-10-15 04:00:45;success;1;1 Übergaben zugewiesen
+L00117;A11;Claude-Routine (Cloud);2026-10-15 05:30:13;2026-10-15 05:38:38;completed;0;0 Kommentare verarbeitet
+L00118;A10;Claude-Routine (Cloud);2026-10-15 05:30:29;2026-10-15 05:32:59;completed;0;0 Deals bewertet
+L00119;A04;Make;2026-10-15 06:00:05;2026-10-15 06:00:25;success;8;8 Transkripte importiert
+L00120;A09;Claude-Routine (Cloud);2026-10-15 06:00:16;2026-10-15 06:05:23;completed;167;Report aktualisiert, 167 Deals
+L00121;A16;Geplanter Task (Laptop);2026-10-15 07:06:24;2026-10-15 07:07:20;ok;47;Snapshot geschrieben, 47 Rechnungen
+L00122;A02;Make;2026-10-15 07:13:24;2026-10-15 07:13:57;success;1;Ticket #49339 gepostet
+L00123;A18;Geplanter Task (Laptop);2026-10-15 07:30:26;2026-10-15 07:32:36;ok;6;Tagesplan mit 6 Aufgaben
+L00124;A07;Make;2026-10-15 08:00:02;2026-10-15 08:00:12;success;1;1 Übergaben zugewiesen
+L00125;A20;Geplanter Task (Laptop);2026-10-15 08:00:36;2026-10-15 08:04:35;ok;0;0 Vorschläge angelegt
+L00126;A01;Make;2026-10-15 08:30:02;2026-10-15 08:30:40;success;0;keine neuen MQLs
+L00127;A02;Make;2026-10-15 08:34:41;2026-10-15 08:35:08;success;1;Ticket #48257 gepostet
+L00128;A20;Geplanter Task (Laptop);2026-10-15 09:00:18;2026-10-15 09:02:07;ok;5;5 Vorschläge angelegt
+L00129;A06;Make;2026-10-15 10:00:06;2026-10-15 10:00:21;success;1;Release-Notiz gepostet
+L00130;A20;Geplanter Task (Laptop);2026-10-15 10:00:09;2026-10-15 10:02:32;ok;1;1 Vorschläge angelegt
+L00131;A20;Geplanter Task (Laptop);2026-10-15 11:00:21;2026-10-15 11:03:24;ok;2;2 Vorschläge angelegt
+L00132;A02;Make;2026-10-15 11:28:43;2026-10-15 11:29:08;success;1;Ticket #48545 gepostet
+L00133;A07;Make;2026-10-15 12:00:04;2026-10-15 12:00:18;success;1;1 Übergaben zugewiesen
+L00134;A20;Geplanter Task (Laptop);2026-10-15 12:00:19;2026-10-15 12:02:55;ok;1;1 Vorschläge angelegt
+L00135;A20;Geplanter Task (Laptop);2026-10-15 13:00:31;2026-10-15 13:04:02;ok;1;1 Vorschläge angelegt
+L00136;A02;Make;2026-10-15 13:49:16;2026-10-15 13:49:55;success;1;Ticket #48278 gepostet
+L00137;A20;Geplanter Task (Laptop);2026-10-15 14:00:14;2026-10-15 14:01:52;ok;1;1 Vorschläge angelegt
+L00138;A20;Geplanter Task (Laptop);2026-10-15 15:00:43;2026-10-15 15:03:28;ok;1;1 Vorschläge angelegt
+L00139;A02;Make;2026-10-15 15:29:14;2026-10-15 15:29:52;success;1;Ticket #49100 gepostet
+L00140;A02;Make;2026-10-15 15:37:07;2026-10-15 15:37:41;success;1;Ticket #48610 gepostet
+L00141;A02;Make;2026-10-15 15:50:05;2026-10-15 15:50:43;success;1;Ticket #48700 gepostet
+L00142;A07;Make;2026-10-15 16:00:00;2026-10-15 16:00:19;success;1;1 Übergaben zugewiesen
+L00143;A20;Geplanter Task (Laptop);2026-10-15 16:00:11;2026-10-15 16:03:31;ok;3;3 Vorschläge angelegt
+L00144;A02;Make;2026-10-15 16:07:06;2026-10-15 16:07:25;success;1;Ticket #49283 gepostet
+L00145;A20;Geplanter Task (Laptop);2026-10-15 17:00:26;2026-10-15 17:04:14;ok;0;0 Vorschläge angelegt
+L00146;A21;Geplanter Task (Laptop);2026-10-15 18:00:29;2026-10-15 18:03:52;ok;1;1 Feedbacks übernommen
+L00147;A20;Geplanter Task (Laptop);2026-10-15 18:00:31;2026-10-15 18:02:31;ok;0;0 Vorschläge angelegt
+L00148;A02;Make;2026-10-15 18:01:39;2026-10-15 18:01:57;success;1;Ticket #48404 gepostet
+L00149;A07;Make;2026-10-15 20:00:02;2026-10-15 20:00:08;success;0;0 Übergaben zugewiesen
+L00150;A07;Make;2026-10-16 00:00:00;2026-10-16 00:00:02;success;0;0 Übergaben zugewiesen
+L00151;A08;Make;2026-10-16 02:00:00;2026-10-16 02:00:04;success;1163;1163 Kontakte abgeglichen
+L00152;A07;Make;2026-10-16 04:00:05;2026-10-16 04:00:33;success;0;0 Übergaben zugewiesen
+L00153;A10;Claude-Routine (Cloud);2026-10-16 05:30:05;2026-10-16 05:37:49;completed;0;0 Deals bewertet
+L00154;A11;Claude-Routine (Cloud);2026-10-16 05:30:50;2026-10-16 05:34:19;completed;2;2 Kommentare verarbeitet
+L00155;A04;Make;2026-10-16 06:00:03;2026-10-16 06:00:24;success;14;14 Transkripte importiert
+L00156;A09;Claude-Routine (Cloud);2026-10-16 06:01:06;2026-10-16 06:07:33;completed;165;Report aktualisiert, 165 Deals
+L00157;A14;Claude-Routine (Cloud);2026-10-16 07:00:17;2026-10-16 07:07:26;completed;1;Folie erstellt
+L00158;A07;Make;2026-10-16 08:00:01;2026-10-16 08:00:28;success;2;2 Übergaben zugewiesen
+L00159;A02;Make;2026-10-16 08:23:37;2026-10-16 08:24:14;success;1;Ticket #49114 gepostet
+L00160;A01;Make;2026-10-16 08:30:02;2026-10-16 08:30:39;success;2;2 Erinnerungen gepostet
+L00161;A02;Make;2026-10-16 08:40:08;2026-10-16 08:40:42;success;1;Ticket #48687 gepostet
+L00162;A02;Make;2026-10-16 08:41:57;2026-10-16 08:42:30;success;1;Ticket #48876 gepostet
+L00163;A02;Make;2026-10-16 09:05:39;2026-10-16 09:06:12;success;1;Ticket #48329 gepostet
+L00164;A07;Make;2026-10-16 12:00:05;2026-10-16 12:00:35;success;1;1 Übergaben zugewiesen
+L00165;A02;Make;2026-10-16 13:17:41;2026-10-16 13:17:53;success;1;Ticket #49200 gepostet
+L00166;A02;Make;2026-10-16 14:52:41;2026-10-16 14:52:49;success;1;Ticket #48240 gepostet
+L00167;A07;Make;2026-10-16 16:00:01;2026-10-16 16:00:25;success;0;0 Übergaben zugewiesen
+L00168;A02;Make;2026-10-16 16:37:08;2026-10-16 16:37:39;success;1;Ticket #48715 gepostet
+L00169;A02;Make;2026-10-16 17:01:43;2026-10-16 17:02:14;success;1;Ticket #48281 gepostet
+L00170;A02;Make;2026-10-16 18:02:16;2026-10-16 18:02:28;success;1;Ticket #48814 gepostet
+L00171;A02;Make;2026-10-16 19:03:26;2026-10-16 19:04:00;success;1;Ticket #48983 gepostet
+L00172;A02;Make;2026-10-16 19:34:40;2026-10-16 19:35:18;success;1;Ticket #48896 gepostet
+L00173;A07;Make;2026-10-16 20:00:01;2026-10-16 20:00:22;success;1;1 Übergaben zugewiesen
+L00174;A07;Make;2026-10-17 00:00:04;2026-10-17 00:00:32;success;0;0 Übergaben zugewiesen
+L00175;A08;Make;2026-10-17 02:00:02;2026-10-17 02:00:29;success;1178;1178 Kontakte abgeglichen
+L00176;A07;Make;2026-10-17 04:00:00;2026-10-17 04:00:22;success;1;1 Übergaben zugewiesen
+L00177;A11;Claude-Routine (Cloud);2026-10-17 05:30:57;2026-10-17 05:35:50;completed;0;0 Kommentare verarbeitet
+L00178;A04;Make;2026-10-17 06:00:06;2026-10-17 06:00:16;success;2;2 Transkripte importiert
+L00179;A09;Claude-Routine (Cloud);2026-10-17 06:00:11;2026-10-17 06:05:25;completed;164;Report aktualisiert, 164 Deals
+L00180;A07;Make;2026-10-17 08:00:05;2026-10-17 08:00:30;success;0;0 Übergaben zugewiesen
+L00181;A07;Make;2026-10-17 12:00:04;2026-10-17 12:00:17;success;0;0 Übergaben zugewiesen
+L00182;A07;Make;2026-10-17 16:00:06;2026-10-17 16:00:38;success;0;0 Übergaben zugewiesen
+L00183;A07;Make;2026-10-17 20:00:00;2026-10-17 20:00:09;success;1;1 Übergaben zugewiesen
+L00184;A07;Make;2026-10-18 00:00:06;2026-10-18 00:00:16;success;0;0 Übergaben zugewiesen
+L00185;A08;Make;2026-10-18 02:00:03;2026-10-18 02:00:37;success;1190;1190 Kontakte abgeglichen
+L00186;A07;Make;2026-10-18 04:00:06;2026-10-18 04:00:45;success;1;1 Übergaben zugewiesen
+L00187;A11;Claude-Routine (Cloud);2026-10-18 05:30:22;2026-10-18 05:37:47;completed;0;0 Kommentare verarbeitet
+L00188;A04;Make;2026-10-18 06:00:02;2026-10-18 06:00:13;success;0;0 Transkripte importiert
+L00189;A09;Claude-Routine (Cloud);2026-10-18 06:00:54;2026-10-18 06:09:03;completed;165;Report aktualisiert, 165 Deals
+L00190;A07;Make;2026-10-18 08:00:05;2026-10-18 08:00:31;success;1;1 Übergaben zugewiesen
+L00191;A02;Make;2026-10-18 08:12:13;2026-10-18 08:12:44;success;1;Ticket #48551 gepostet
+L00192;A07;Make;2026-10-18 12:00:01;2026-10-18 12:00:06;success;0;0 Übergaben zugewiesen
+L00193;A02;Make;2026-10-18 15:09:44;2026-10-18 15:10:09;success;1;Ticket #48780 gepostet
+L00194;A07;Make;2026-10-18 16:00:04;2026-10-18 16:00:40;success;0;0 Übergaben zugewiesen
+L00195;A07;Make;2026-10-18 20:00:02;2026-10-18 20:00:11;success;0;0 Übergaben zugewiesen
+L00196;A07;Make;2026-10-19 00:00:04;2026-10-19 00:00:25;success;1;1 Übergaben zugewiesen
+L00197;A08;Make;2026-10-19 02:00:03;2026-10-19 02:00:09;success;1212;1212 Kontakte abgeglichen
+L00198;A07;Make;2026-10-19 04:00:06;2026-10-19 04:00:26;success;2;2 Übergaben zugewiesen
+L00199;A13;Claude-Routine (Cloud);2026-10-19 04:31:17;2026-10-19 04:33:49;completed;1;Seite angelegt
+L00200;A10;Claude-Routine (Cloud);2026-10-19 05:30:24;2026-10-19 05:32:44;completed;0;0 Deals bewertet
+L00201;A11;Claude-Routine (Cloud);2026-10-19 05:30:30;2026-10-19 05:35:15;completed;0;0 Kommentare verarbeitet
+L00202;A04;Make;2026-10-19 06:00:06;2026-10-19 06:00:38;success;13;13 Transkripte importiert
+L00203;A09;Claude-Routine (Cloud);2026-10-19 06:01:09;2026-10-19 06:05:16;completed;168;Report aktualisiert, 168 Deals
+L00204;A12;Claude-Routine (Cloud);2026-10-19 06:01:13;2026-10-19 06:06:09;completed;3;3 Folien erstellt
+L00205;A15;Claude-Routine (Cloud);2026-10-19 07:31:06;2026-10-19 07:37:40;completed;213;Report gepostet, 213 Deals
+L00206;A07;Make;2026-10-19 08:00:04;2026-10-19 08:00:20;success;0;0 Übergaben zugewiesen
+L00207;A01;Make;2026-10-19 08:30:06;2026-10-19 08:30:26;success;0;keine neuen MQLs
+L00208;A05;Make;2026-10-19 09:00:05;2026-10-19 09:00:38;success;5;5 Entwürfe gepostet
+L00209;A02;Make;2026-10-19 09:29:12;2026-10-19 09:29:26;success;1;Ticket #49177 gepostet
+L00210;A18;Geplanter Task (Laptop);2026-10-19 10:06:21;2026-10-19 10:09:54;ok;10;Tagesplan mit 10 Aufgaben
+L00211;A02;Make;2026-10-19 10:54:10;2026-10-19 10:54:23;success;1;Ticket #48601 gepostet
+L00212;A20;Geplanter Task (Laptop);2026-10-19 11:00:40;2026-10-19 11:04:33;ok;3;3 Vorschläge angelegt
+L00213;A07;Make;2026-10-19 12:00:03;2026-10-19 12:00:15;success;1;1 Übergaben zugewiesen
+L00214;A20;Geplanter Task (Laptop);2026-10-19 12:00:07;2026-10-19 12:02:24;ok;0;0 Vorschläge angelegt
+L00215;A20;Geplanter Task (Laptop);2026-10-19 13:00:38;2026-10-19 13:04:39;ok;0;0 Vorschläge angelegt
+L00216;A20;Geplanter Task (Laptop);2026-10-19 14:00:09;2026-10-19 14:01:07;ok;1;1 Vorschläge angelegt
+L00217;A02;Make;2026-10-19 14:19:51;2026-10-19 14:20:26;success;1;Ticket #48534 gepostet
+L00218;A02;Make;2026-10-19 14:45:17;2026-10-19 14:45:48;success;1;Ticket #49297 gepostet
+L00219;A20;Geplanter Task (Laptop);2026-10-19 15:00:22;2026-10-19 15:01:44;ok;5;5 Vorschläge angelegt
+L00220;A07;Make;2026-10-19 16:00:03;2026-10-19 16:00:25;success;1;1 Übergaben zugewiesen
+L00221;A20;Geplanter Task (Laptop);2026-10-19 16:00:44;2026-10-19 16:01:44;ok;0;0 Vorschläge angelegt
+L00222;A20;Geplanter Task (Laptop);2026-10-19 17:00:34;2026-10-19 17:02:19;ok;1;1 Vorschläge angelegt
+L00223;A02;Make;2026-10-19 17:48:23;2026-10-19 17:48:28;success;1;Ticket #48725 gepostet
+L00224;A21;Geplanter Task (Laptop);2026-10-19 18:00:08;2026-10-19 18:02:15;ok;2;2 Feedbacks übernommen
+L00225;A20;Geplanter Task (Laptop);2026-10-19 18:00:31;2026-10-19 18:02:00;ok;1;1 Vorschläge angelegt
+L00226;A02;Make;2026-10-19 19:27:34;2026-10-19 19:28:09;success;1;Ticket #48425 gepostet
+L00227;A07;Make;2026-10-19 20:00:06;2026-10-19 20:00:36;success;3;3 Übergaben zugewiesen
+L00228;A07;Make;2026-10-20 00:00:00;2026-10-20 00:00:09;success;0;0 Übergaben zugewiesen
+L00229;A08;Make;2026-10-20 02:00:04;2026-10-20 02:00:13;success;1170;1170 Kontakte abgeglichen
+L00230;A07;Make;2026-10-20 04:00:04;2026-10-20 04:00:06;success;3;3 Übergaben zugewiesen
+L00231;A10;Claude-Routine (Cloud);2026-10-20 05:30:16;2026-10-20 05:35:30;completed;0;0 Deals bewertet
+L00232;A11;Claude-Routine (Cloud);2026-10-20 05:30:41;2026-10-20 05:33:48;completed;2;2 Kommentare verarbeitet
+L00233;A04;Make;2026-10-20 06:00:04;2026-10-20 06:00:19;success;19;19 Transkripte importiert
+L00234;A09;Claude-Routine (Cloud);2026-10-20 06:00:16;2026-10-20 06:04:34;completed;137;Report aktualisiert, 137 Deals
+L00235;A16;Geplanter Task (Laptop);2026-10-20 07:06:28;2026-10-20 07:10:10;ok;45;Snapshot geschrieben, 45 Rechnungen
+L00236;A18;Geplanter Task (Laptop);2026-10-20 07:30:27;2026-10-20 07:33:46;ok;8;Tagesplan mit 8 Aufgaben
+L00237;A02;Make;2026-10-20 07:38:49;2026-10-20 07:39:03;success;1;Ticket #48737: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00238;A07;Make;2026-10-20 08:00:01;2026-10-20 08:00:03;success;0;0 Übergaben zugewiesen
+L00239;A20;Geplanter Task (Laptop);2026-10-20 08:00:28;2026-10-20 08:01:33;ok;0;0 Vorschläge angelegt
+L00240;A01;Make;2026-10-20 08:30:01;2026-10-20 08:30:38;success;3;3 Erinnerungen gepostet
+L00241;A22;Make;2026-10-20 09:00:03;2026-10-20 09:00:28;success;6;6 Aufgaben angelegt
+L00242;A20;Geplanter Task (Laptop);2026-10-20 09:00:24;2026-10-20 09:02:20;ok;1;1 Vorschläge angelegt
+L00243;A03;Make;2026-10-20 09:18:18;2026-10-20 09:18:52;success;1;Freigabe-Post gepostet
+L00244;A20;Geplanter Task (Laptop);2026-10-20 10:00:34;2026-10-20 10:02:27;ok;5;5 Vorschläge angelegt
+L00245;A02;Make;2026-10-20 10:24:35;2026-10-20 10:25:11;success;1;Ticket #48516: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00246;A20;Geplanter Task (Laptop);2026-10-20 11:00:30;2026-10-20 11:03:17;ok;0;0 Vorschläge angelegt
+L00247;A02;Make;2026-10-20 11:06:32;2026-10-20 11:07:07;success;1;Ticket #48990: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00248;A02;Make;2026-10-20 11:31:39;2026-10-20 11:32:08;success;1;Ticket #48745: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00249;A02;Make;2026-10-20 11:47:48;2026-10-20 11:48:02;success;1;Ticket #49065: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00250;A07;Make;2026-10-20 12:00:05;2026-10-20 12:00:14;success;2;2 Übergaben zugewiesen
+L00251;A20;Geplanter Task (Laptop);2026-10-20 12:00:44;2026-10-20 12:04:16;ok;3;3 Vorschläge angelegt
+L00252;A02;Make;2026-10-20 12:17:57;2026-10-20 12:18:32;success;1;Ticket #48213: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00253;A02;Make;2026-10-20 12:26:22;2026-10-20 12:26:38;success;1;Ticket #49255: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00254;A20;Geplanter Task (Laptop);2026-10-20 13:00:19;2026-10-20 13:01:09;ok;3;3 Vorschläge angelegt
+L00255;A02;Make;2026-10-20 13:30:03;2026-10-20 13:30:27;success;1;Ticket #48299: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00256;A20;Geplanter Task (Laptop);2026-10-20 14:00:23;2026-10-20 14:02:07;ok;1;1 Vorschläge angelegt
+L00257;A03;Make;2026-10-20 14:37:07;2026-10-20 14:37:12;success;1;Freigabe-Post gepostet
+L00258;A20;Geplanter Task (Laptop);2026-10-20 15:00:20;2026-10-20 15:02:20;ok;0;0 Vorschläge angelegt
+L00259;A07;Make;2026-10-20 16:00:06;2026-10-20 16:00:38;success;0;0 Übergaben zugewiesen
+L00260;A20;Geplanter Task (Laptop);2026-10-20 16:00:30;2026-10-20 16:02:01;ok;2;2 Vorschläge angelegt
+L00261;A20;Geplanter Task (Laptop);2026-10-20 17:00:30;2026-10-20 17:03:54;ok;0;0 Vorschläge angelegt
+L00262;A21;Geplanter Task (Laptop);2026-10-20 18:00:17;2026-10-20 18:01:56;ok;0;0 Feedbacks übernommen
+L00263;A20;Geplanter Task (Laptop);2026-10-20 18:00:39;2026-10-20 18:02:31;ok;0;0 Vorschläge angelegt
+L00264;A02;Make;2026-10-20 18:02:30;2026-10-20 18:02:33;success;1;Ticket #48679: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00265;A02;Make;2026-10-20 18:03:15;2026-10-20 18:03:27;success;1;Ticket #48991: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00266;A02;Make;2026-10-20 19:05:21;2026-10-20 19:05:54;success;1;Ticket #48964: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00267;A07;Make;2026-10-20 20:00:01;2026-10-20 20:00:05;success;2;2 Übergaben zugewiesen
+L00268;A07;Make;2026-10-21 00:00:05;2026-10-21 00:00:14;success;3;3 Übergaben zugewiesen
+L00269;A08;Make;2026-10-21 02:00:06;2026-10-21 02:00:36;success;1173;1173 Kontakte abgeglichen
+L00270;A07;Make;2026-10-21 04:00:03;2026-10-21 04:00:11;success;1;1 Übergaben zugewiesen
+L00271;A11;Claude-Routine (Cloud);2026-10-21 05:31:19;2026-10-21 05:33:45;completed;0;0 Kommentare verarbeitet
+L00272;A10;Claude-Routine (Cloud);2026-10-21 05:31:33;2026-10-21 05:34:46;completed;0;0 Deals bewertet
+L00273;A04;Make;2026-10-21 06:00:00;2026-10-21 06:00:34;success;10;10 Transkripte importiert
+L00274;A09;Claude-Routine (Cloud);2026-10-21 06:00:30;2026-10-21 06:03:53;completed;138;Report aktualisiert, 138 Deals
+L00275;A02;Make;2026-10-21 07:05:37;2026-10-21 07:06:01;success;1;Ticket #49350: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00276;A16;Geplanter Task (Laptop);2026-10-21 07:06:14;2026-10-21 07:09:02;ok;41;Snapshot geschrieben, 41 Rechnungen
+L00277;A18;Geplanter Task (Laptop);2026-10-21 07:30:37;2026-10-21 07:31:38;ok;7;Tagesplan mit 7 Aufgaben
+L00278;A02;Make;2026-10-21 07:59:31;2026-10-21 07:59:51;success;1;Ticket #48987: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00279;A07;Make;2026-10-21 08:00:05;2026-10-21 08:00:45;success;2;2 Übergaben zugewiesen
+L00280;A20;Geplanter Task (Laptop);2026-10-21 08:00:42;2026-10-21 08:02:30;ok;1;1 Vorschläge angelegt
+L00281;A01;Make;2026-10-21 08:30:04;2026-10-21 08:30:09;success;1;1 Erinnerungen gepostet
+L00282;A20;Geplanter Task (Laptop);2026-10-21 09:00:41;2026-10-21 09:04:37;ok;1;1 Vorschläge angelegt
+L00283;A02;Make;2026-10-21 09:13:39;2026-10-21 09:13:57;success;1;Ticket #48819: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00284;A20;Geplanter Task (Laptop);2026-10-21 10:00:10;2026-10-21 10:03:47;ok;0;0 Vorschläge angelegt
+L00285;A20;Geplanter Task (Laptop);2026-10-21 11:00:15;2026-10-21 11:01:27;ok;1;1 Vorschläge angelegt
+L00286;A02;Make;2026-10-21 11:04:41;2026-10-21 11:04:46;success;1;Ticket #49362: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00287;A02;Make;2026-10-21 11:35:29;2026-10-21 11:35:36;success;1;Ticket #48231: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00288;A07;Make;2026-10-21 12:00:00;2026-10-21 12:00:22;success;0;0 Übergaben zugewiesen
+L00289;A20;Geplanter Task (Laptop);2026-10-21 12:00:34;2026-10-21 12:01:58;ok;0;0 Vorschläge angelegt
+L00290;A20;Geplanter Task (Laptop);2026-10-21 13:00:07;2026-10-21 13:02:35;ok;0;0 Vorschläge angelegt
+L00291;A20;Geplanter Task (Laptop);2026-10-21 14:00:41;2026-10-21 14:03:41;ok;5;5 Vorschläge angelegt
+L00292;A02;Make;2026-10-21 14:04:51;2026-10-21 14:05:08;success;1;Ticket #48898: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00293;A02;Make;2026-10-21 14:38:03;2026-10-21 14:38:23;success;1;Ticket #48821: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00294;A20;Geplanter Task (Laptop);2026-10-21 15:00:19;2026-10-21 15:01:27;ok;1;1 Vorschläge angelegt
+L00295;A02;Make;2026-10-21 15:36:22;2026-10-21 15:36:33;success;1;Ticket #48926: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00296;A07;Make;2026-10-21 16:00:01;2026-10-21 16:00:07;success;3;3 Übergaben zugewiesen
+L00297;A20;Geplanter Task (Laptop);2026-10-21 16:00:06;2026-10-21 16:02:59;ok;3;3 Vorschläge angelegt
+L00298;A20;Geplanter Task (Laptop);2026-10-21 17:00:42;2026-10-21 17:04:59;ok;0;0 Vorschläge angelegt
+L00299;A20;Geplanter Task (Laptop);2026-10-21 18:00:12;2026-10-21 18:01:06;ok;0;0 Vorschläge angelegt
+L00300;A21;Geplanter Task (Laptop);2026-10-21 18:00:29;2026-10-21 18:04:37;ok;0;0 Feedbacks übernommen
+L00301;A02;Make;2026-10-21 18:29:42;2026-10-21 18:30:11;success;1;Ticket #48430: Post fehlgeschlagen, HTTP 404 channel_not_found (Fehler ignoriert)
+L00302;A07;Make;2026-10-21 20:00:02;2026-10-21 20:00:35;success;0;0 Übergaben zugewiesen
+L00303;A07;Make;2026-10-22 00:00:05;2026-10-22 00:00:17;success;2;2 Übergaben zugewiesen
+L00304;A08;Make;2026-10-22 02:00:02;2026-10-22 02:00:28;success;1202;1202 Kontakte abgeglichen
+L00305;A07;Make;2026-10-22 04:00:06;2026-10-22 04:00:20;success;3;3 Übergaben zugewiesen
+L00306;A11;Claude-Routine (Cloud);2026-10-22 05:30:42;2026-10-22 05:33:24;completed;0;0 Kommentare verarbeitet
+L00307;A10;Claude-Routine (Cloud);2026-10-22 05:31:26;2026-10-22 05:36:13;completed;141;141 Deals bewertet
+L00308;A04;Make;2026-10-22 06:00:04;2026-10-22 06:00:07;success;7;7 Transkripte importiert
+L00309;A09;Claude-Routine (Cloud);2026-10-22 06:00:24;2026-10-22 06:04:10;completed;138;Report aktualisiert, 138 Deals
+L00310;A16;Geplanter Task (Laptop);2026-10-22 07:06:08;2026-10-22 07:10:19;ok;42;Snapshot geschrieben, 42 Rechnungen
+L00311;A18;Geplanter Task (Laptop);2026-10-22 07:30:40;2026-10-22 07:32:11;ok;10;Tagesplan mit 10 Aufgaben
+L00312;A07;Make;2026-10-22 08:00:05;2026-10-22 08:00:30;success;0;0 Übergaben zugewiesen
+L00313;A20;Geplanter Task (Laptop);2026-10-22 08:00:31;2026-10-22 08:02:21;ok;0;0 Vorschläge angelegt
+L00314;A02;Make;2026-10-22 08:00:35;2026-10-22 08:00:38;success;1;Ticket #48455 gepostet
+L00315;A01;Make;2026-10-22 08:30:00;2026-10-22 08:30:03;success;1;1 Erinnerungen gepostet
+L00316;A20;Geplanter Task (Laptop);2026-10-22 09:00:41;2026-10-22 09:03:39;ok;5;5 Vorschläge angelegt
+L00317;A06;Make;2026-10-22 10:00:00;2026-10-22 10:00:08;success;1;Release-Notiz gepostet
+L00318;A20;Geplanter Task (Laptop);2026-10-22 10:00:30;2026-10-22 10:02:11;ok;1;1 Vorschläge angelegt
+L00319;A02;Make;2026-10-22 10:11:49;2026-10-22 10:12:07;success;1;Ticket #48954 gepostet
+L00320;A02;Make;2026-10-22 10:44:20;2026-10-22 10:44:30;success;1;Ticket #48856 gepostet
+L00321;A02;Make;2026-10-22 10:54:38;2026-10-22 10:55:13;success;1;Ticket #48529 gepostet
+L00322;A20;Geplanter Task (Laptop);2026-10-22 11:00:21;2026-10-22 11:04:31;ok;3;3 Vorschläge angelegt
+L00323;A02;Make;2026-10-22 11:22:52;2026-10-22 11:23:08;success;1;Ticket #48528 gepostet
+L00324;A07;Make;2026-10-22 12:00:02;2026-10-22 12:00:29;success;2;2 Übergaben zugewiesen
+L00325;A20;Geplanter Task (Laptop);2026-10-22 12:00:44;2026-10-22 12:04:37;ok;2;2 Vorschläge angelegt
+L00326;A02;Make;2026-10-22 12:11:32;2026-10-22 12:12:12;success;1;Ticket #48980 gepostet
+L00327;A02;Make;2026-10-22 12:19:05;2026-10-22 12:19:18;success;1;Ticket #49109 gepostet
+L00328;A20;Geplanter Task (Laptop);2026-10-22 13:00:32;2026-10-22 13:02:23;ok;0;0 Vorschläge angelegt
+L00329;A20;Geplanter Task (Laptop);2026-10-22 14:00:08;2026-10-22 14:04:07;ok;2;2 Vorschläge angelegt
+L00330;A02;Make;2026-10-22 14:02:42;2026-10-22 14:03:03;success;1;Ticket #48450 gepostet
+L00331;A02;Make;2026-10-22 14:14:35;2026-10-22 14:14:57;success;1;Ticket #49311 gepostet
+L00332;A20;Geplanter Task (Laptop);2026-10-22 15:00:34;2026-10-22 15:03:45;ok;0;0 Vorschläge angelegt
+L00333;A03;Make;2026-10-22 15:09:22;2026-10-22 15:09:24;success;1;Freigabe-Post gepostet
+L00334;A07;Make;2026-10-22 16:00:04;2026-10-22 16:00:31;success;1;1 Übergaben zugewiesen
+L00335;A20;Geplanter Task (Laptop);2026-10-22 16:00:33;2026-10-22 16:04:53;ok;2;2 Vorschläge angelegt
+L00336;A20;Geplanter Task (Laptop);2026-10-22 17:00:17;2026-10-22 17:03:06;ok;1;1 Vorschläge angelegt
+L00337;A02;Make;2026-10-22 17:48:30;2026-10-22 17:48:46;success;1;Ticket #48772 gepostet
+L00338;A02;Make;2026-10-22 17:59:04;2026-10-22 17:59:33;success;1;Ticket #48515 gepostet
+L00339;A20;Geplanter Task (Laptop);2026-10-22 18:00:15;2026-10-22 18:04:32;ok;1;1 Vorschläge angelegt
+L00340;A21;Geplanter Task (Laptop);2026-10-22 18:00:43;2026-10-22 18:03:23;ok;1;1 Feedbacks übernommen
+L00341;A02;Make;2026-10-22 19:20:56;2026-10-22 19:21:36;success;1;Ticket #48586 gepostet
+L00342;A07;Make;2026-10-22 20:00:03;2026-10-22 20:00:12;warning;0;0 Übergaben zugewiesen, Rate-Limit erreicht und automatisch wiederholt
+L00343;A07;Make;2026-10-23 00:00:06;2026-10-23 00:00:44;success;0;0 Übergaben zugewiesen
+L00344;A08;Make;2026-10-23 02:00:02;2026-10-23 02:00:23;success;1197;1197 Kontakte abgeglichen
+L00345;A07;Make;2026-10-23 04:00:03;2026-10-23 04:00:20;success;3;3 Übergaben zugewiesen
+L00346;A11;Claude-Routine (Cloud);2026-10-23 05:31:19;2026-10-23 05:33:14;completed;2;2 Kommentare verarbeitet
+L00347;A10;Claude-Routine (Cloud);2026-10-23 05:31:21;2026-10-23 05:36:23;completed;142;142 Deals bewertet
+L00348;A04;Make;2026-10-23 06:00:01;2026-10-23 06:00:28;success;10;10 Transkripte importiert
+L00349;A09;Claude-Routine (Cloud);2026-10-23 06:01:16;2026-10-23 06:04:40;completed;138;Report aktualisiert, 138 Deals
+L00350;A14;Claude-Routine (Cloud);2026-10-23 07:00:41;2026-10-23 07:08:48;completed;1;Folie erstellt
+L00351;A16;Geplanter Task (Laptop);2026-10-23 07:06:30;2026-10-23 07:09:23;ok;42;Snapshot geschrieben, 42 Rechnungen
+L00352;A18;Geplanter Task (Laptop);2026-10-23 07:30:09;2026-10-23 07:34:25;ok;12;Tagesplan mit 12 Aufgaben
+L00353;A02;Make;2026-10-23 07:54:51;2026-10-23 07:54:55;success;1;Ticket #48557 gepostet
+L00354;A07;Make;2026-10-23 08:00:04;2026-10-23 08:00:42;success;3;3 Übergaben zugewiesen
+L00355;A20;Geplanter Task (Laptop);2026-10-23 08:00:42;2026-10-23 08:04:39;ok;1;1 Vorschläge angelegt
+L00356;A01;Make;2026-10-23 08:30:01;2026-10-23 08:30:06;success;0;keine neuen MQLs
+L00357;A20;Geplanter Task (Laptop);2026-10-23 09:00:08;2026-10-23 09:04:11;ok;5;5 Vorschläge angelegt
+L00358;A02;Make;2026-10-23 09:27:58;2026-10-23 09:28:06;success;1;Ticket #48894 gepostet
+L00359;A20;Geplanter Task (Laptop);2026-10-23 10:00:09;2026-10-23 10:02:08;ok;5;5 Vorschläge angelegt
+L00360;A02;Make;2026-10-23 10:39:08;2026-10-23 10:39:43;success;1;Ticket #49069 gepostet
+L00361;A20;Geplanter Task (Laptop);2026-10-23 11:00:24;2026-10-23 11:02:56;ok;0;0 Vorschläge angelegt
+L00362;A07;Make;2026-10-23 12:00:06;2026-10-23 12:00:30;success;3;3 Übergaben zugewiesen
+L00363;A20;Geplanter Task (Laptop);2026-10-23 12:00:30;2026-10-23 12:04:50;ok;1;1 Vorschläge angelegt
+L00364;A02;Make;2026-10-23 12:19:43;2026-10-23 12:20:10;success;1;Ticket #48597 gepostet
+L00365;A02;Make;2026-10-23 12:42:59;2026-10-23 12:43:28;success;1;Ticket #49027 gepostet
+L00366;A20;Geplanter Task (Laptop);2026-10-23 13:00:30;2026-10-23 13:02:16;ok;0;0 Vorschläge angelegt
+L00367;A20;Geplanter Task (Laptop);2026-10-23 14:00:28;2026-10-23 14:01:52;ok;0;0 Vorschläge angelegt
+L00368;A02;Make;2026-10-23 14:18:21;2026-10-23 14:18:34;success;1;Ticket #48548 gepostet
+L00369;A02;Make;2026-10-23 14:43:35;2026-10-23 14:43:58;success;1;Ticket #48444 gepostet
+L00370;A20;Geplanter Task (Laptop);2026-10-23 15:00:38;2026-10-23 15:01:46;ok;2;2 Vorschläge angelegt
+L00371;A02;Make;2026-10-23 15:46:20;2026-10-23 15:46:58;success;1;Ticket #48399 gepostet
+L00372;A07;Make;2026-10-23 16:00:04;2026-10-23 16:00:15;success;1;1 Übergaben zugewiesen
+L00373;A20;Geplanter Task (Laptop);2026-10-23 16:00:37;2026-10-23 16:04:27;ok;5;5 Vorschläge angelegt
+L00374;A02;Make;2026-10-23 16:12:35;2026-10-23 16:12:57;success;1;Ticket #48220 gepostet
+L00375;A20;Geplanter Task (Laptop);2026-10-23 17:00:36;2026-10-23 17:03:51;ok;1;1 Vorschläge angelegt
+L00376;A02;Make;2026-10-23 17:12:14;2026-10-23 17:12:24;success;1;Ticket #48832 gepostet
+L00377;A20;Geplanter Task (Laptop);2026-10-23 18:00:08;2026-10-23 18:04:01;ok;0;0 Vorschläge angelegt
+L00378;A21;Geplanter Task (Laptop);2026-10-23 18:00:36;2026-10-23 18:01:29;ok;1;1 Feedbacks übernommen
+L00379;A02;Make;2026-10-23 18:47:26;2026-10-23 18:47:36;success;1;Ticket #48640 gepostet
+L00380;A07;Make;2026-10-23 20:00:06;2026-10-23 20:00:29;success;2;2 Übergaben zugewiesen
+L00381;A07;Make;2026-10-24 00:00:03;2026-10-24 00:00:26;success;0;0 Übergaben zugewiesen
+L00382;A08;Make;2026-10-24 02:00:01;2026-10-24 02:00:05;success;1159;1159 Kontakte abgeglichen
+L00383;A07;Make;2026-10-24 04:00:00;2026-10-24 04:00:06;success;1;1 Übergaben zugewiesen
+L00384;A11;Claude-Routine (Cloud);2026-10-24 05:31:30;2026-10-24 05:37:51;completed;0;0 Kommentare verarbeitet
+L00385;A04;Make;2026-10-24 06:00:00;2026-10-24 06:00:34;success;2;2 Transkripte importiert
+L00386;A09;Claude-Routine (Cloud);2026-10-24 06:00:38;2026-10-24 06:05:40;completed;138;Report aktualisiert, 138 Deals
+L00387;A07;Make;2026-10-24 08:00:02;2026-10-24 08:00:13;success;0;0 Übergaben zugewiesen
+L00388;A02;Make;2026-10-24 09:38:32;2026-10-24 09:38:39;success;1;Ticket #48880 gepostet
+L00389;A07;Make;2026-10-24 12:00:03;2026-10-24 12:00:14;success;0;0 Übergaben zugewiesen
+L00390;A07;Make;2026-10-24 16:00:06;2026-10-24 16:00:38;success;0;0 Übergaben zugewiesen
+L00391;A02;Make;2026-10-24 17:21:58;2026-10-24 17:22:13;success;1;Ticket #48215 gepostet
+L00392;A07;Make;2026-10-24 20:00:04;2026-10-24 20:00:13;success;1;1 Übergaben zugewiesen
+L00393;A07;Make;2026-10-25 00:00:06;2026-10-25 00:00:20;success;1;1 Übergaben zugewiesen
+L00394;A08;Make;2026-10-25 02:00:03;2026-10-25 02:00:21;success;1162;1162 Kontakte abgeglichen
+L00395;A07;Make;2026-10-25 04:00:04;2026-10-25 04:00:12;success;1;1 Übergaben zugewiesen
+L00396;A11;Claude-Routine (Cloud);2026-10-25 05:31:23;2026-10-25 05:34:56;completed;0;0 Kommentare verarbeitet
+L00397;A04;Make;2026-10-25 06:00:02;2026-10-25 06:00:35;success;0;0 Transkripte importiert
+L00398;A09;Claude-Routine (Cloud);2026-10-25 06:01:30;2026-10-25 06:04:33;completed;137;Report aktualisiert, 137 Deals
+L00399;A07;Make;2026-10-25 08:00:06;2026-10-25 08:00:32;success;0;0 Übergaben zugewiesen
+L00400;A07;Make;2026-10-25 12:00:02;2026-10-25 12:00:29;success;0;0 Übergaben zugewiesen
+L00401;A02;Make;2026-10-25 15:58:47;2026-10-25 15:58:51;success;1;Ticket #48613 gepostet
+L00402;A07;Make;2026-10-25 16:00:03;2026-10-25 16:00:17;success;0;0 Übergaben zugewiesen
+L00403;A07;Make;2026-10-25 20:00:00;2026-10-25 20:00:10;success;0;0 Übergaben zugewiesen

@@ -42,6 +42,14 @@ def checks(reg: Registry, inc: dict, ctx: dict) -> List[dict]:
             out.append(_item("Nur der Laptop betroffen",
                              "Im selben Zeitraum liefen %d Läufe von Make und Cloud-Routinen normal. Der Ausfall ist auf den Laptop begrenzt, nicht auf das Netz oder die Plattformen." % len(fremd),
                              "belegt"))
+    elif a and code == "RUN_MISSING":
+        lo, hi = t0 - 5400, t0 + 5400
+        ps = [(x["id"], ok_runs(x["id"], lo, hi)) for x in reg.autos.values() if x["werkzeug"] == a["werkzeug"] and x["id"] != a["id"]]
+        ps = [(i, r) for i, r in ps if r]
+        if ps:
+            out.append(_item("Plattform lief, nur diese Aufgabe nicht",
+                             "Zur selben Zeit liefen %s normal (%s). Das Gerät bzw. die Plattform war verfügbar – %s selbst startet nicht (deaktiviert, gelöscht oder defekt)." %
+                             (", ".join(i for i, _ in ps), a["werkzeug"], a["id"]), "belegt", [r[0].id for _, r in ps][:3]))
     elif a and code in ("TEXT_ERROR", "STATUS_ERROR"):
         peers = [x for x in reg.autos.values() if x["werkzeug"] == a["werkzeug"] and x["id"] != a["id"]]
         if a.get("slack_post"):

@@ -14,7 +14,7 @@ from .store import Store
 
 LEVEL_NAME = {1: "kritisch", 2: "hoch", 3: "mittel", 4: "info"}
 STATE_LABEL = {"neu": "Unbearbeitet", "uebernommen": "In Arbeit", "geloest": "Gelöst", "fehlalarm": "Fehlalarm", "ruhend": "Zurückgestellt"}
-FAM_LABEL = {"fehler": "Fehler", "warnung": "Warnung", "wert": "Wert", "eingefroren": "Wert", "ausfall": "Ausfall", "stille": "Ruhe", "daten": "Daten"}
+FAM_LABEL = {"doppelt": "Doppellauf", "referenz": "Doppelte Referenz", "fehler": "Fehler", "warnung": "Warnung", "wert": "Wert", "eingefroren": "Wert", "ausfall": "Ausfall", "stille": "Ruhe", "daten": "Daten"}
 SERIOUS = ("TEXT_ERROR", "STATUS_ERROR", "RUN_MISSING", "VOLUME_ZERO", "STATUS_UNBEKANNT")
 
 
@@ -28,6 +28,8 @@ def _code_level(code: str, a: Optional[dict]) -> int:
         return 2 if len(a.get("tage", [])) == 1 else 3
     if code == "VOLUME_ZERO":
         return 1 if sofort else 2
+    if code == "RUN_DUPLICATE":
+        return 2 if sofort else 3
     if code in ("VOLUME_DEVIATION", "SILENCE", "STATUS_UNBEKANNT"):
         return 2
     if code == "KEINE_EINLIEFERUNG":
@@ -117,6 +119,18 @@ def build(reg: Registry, store: Store, as_of: datetime) -> dict:
         if len(kids) < 2:
             singles += kids
             continue
+        for k in kids:
+            def soll(o):  # maßgeblich ist der Soll-Zeitpunkt, nicht der Erkennungszeitpunkt
+                return parse_local(o["slot"]).timestamp() if o.get("slot") else o["ts"]
+            later = [o for o in k["occ"] if back and soll(o) > back]
+            if later:
+                n = dict(k)
+                n.update({"occ": later, "first_ts": later[0]["ts"], "last_ts": later[-1]["ts"], "prior": k["prior"] + 1,
+                          "id": "%s:ausfall:%s" % (k["automation"], iso(from_ts(later[0]["ts"]))), "kompensiert": k["kompensiert"]})
+                singles.append(n)
+                k["occ"] = [o for o in k["occ"] if soll(o) <= back]
+                k["last_ts"] = k["occ"][-1]["ts"]
+                k["recovered_ts"], k["recovered_by"], k["kompensiert"], k["weiter_als"] = None, None, False, n["id"]
         kids.sort(key=lambda k: k["first_ts"])
         first = min(k["first_ts"] for k in kids)
         g = {"id": "GRP:%s:%s" % (reg.tools[tool]["kurz"], iso(from_ts(first))), "kind": "gruppe", "family": "ausfall",
@@ -124,7 +138,8 @@ def build(reg: Registry, store: Store, as_of: datetime) -> dict:
              "automations": sorted({k["automation"] for k in kids}), "children": kids, "device_back": back,
              "occ": [o for k in kids for o in k["occ"]], "prior": 0, "kompensiert": False, "frozen_notes": 0,
              "recovered_by": None}
-        g["recovered_ts"] = max((k["recovered_ts"] or 0) for k in kids) if all(k["recovered_ts"] for k in kids) else None
+        g["recovered_ts"] = (max((k["recovered_ts"] or back or 0) for k in kids)
+                             if all(k["recovered_ts"] or k.get("weiter_als") for k in kids) else None)
         top.append(g)
     for r in singles:
         r["kind"] = "einzel"
@@ -157,6 +172,12 @@ def build(reg: Registry, store: Store, as_of: datetime) -> dict:
             t["owners"] = list(a["owner"])
             t["klasse"] = a["klasse"]
         t.update({k: d.get(k) for k in ("titel", "kurz", "ursachen", "empfehlung", "nacharbeit", "wirkung")})
+        if t.get("prior") and t["family"] == "ausfall" and t["kind"] != "gruppe":
+            a_ = reg.autos[t["automation"]]
+            weekly = len(a_.get("tage", [])) == 1
+            t["titel"] = ("%s: fehlt zum %d. Mal in Folge" % (a_["name"], t["prior"] + 1)) if weekly else ("%s: fällt erneut aus" % a_["name"])
+            t["kurz"] = ("%s %s ist am %s wieder nicht gestartet. Der Lauf fehlte schon zuvor und ist seitdem kein einziges Mal gelaufen%s." %
+                         (a_["id"], a_["name"], fmt_dt(from_ts(t["first_ts"])), " – bei einem Wochenjob sind das zwei Wochen ohne Ergebnis" if weekly else ""))
         t["level_name"] = LEVEL_NAME[t["level"]]
         t["count"] = len(t["occ"])
         t["wiederkehrend"] = t.get("prior", 0) > 0

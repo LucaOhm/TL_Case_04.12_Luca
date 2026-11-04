@@ -19,10 +19,12 @@ Bewusst **nicht** gebaut: Anbindung an Make, Cloud-Routinen, Laptop, echtes Slac
 ## Starten und Testlauf
 
 ```bash
-cd src
-python3 -m heartbeat serve              # liest beim ersten Start data/laeufe*.csv ein
+./start_lokal.sh                        # beide Versionen nebeneinander: 8765 = bis 25.10., 8766 = mit 26.10.
+cd src && python3 -m heartbeat serve    # nur eine Version; liest beim ersten Start alle data/laeufe*.csv ein
 # Dashboard: http://127.0.0.1:8765        Slack-Mockup: http://127.0.0.1:8765/slack
 ```
+
+Ohne Installation: die Online-Versionen bzw. die HTML-Dateien in `demo/` (siehe README). Sie sind vorberechnet, Aktionen werden dort nur angezeigt.
 
 Neue Läufe einspielen (z. B. das Excel-Protokoll vom 26.10.):
 - im Dashboard unter **Datenfluss & Testlauf** die Datei ablegen, oder

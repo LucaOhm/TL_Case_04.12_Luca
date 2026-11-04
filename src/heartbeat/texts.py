@@ -114,8 +114,9 @@ def describe(inc: dict, a: dict, ctx: dict) -> dict:
         o = occ[-1]
         pct = o.get("abweichung_pct")
         out["titel"] = "%s: %s" % (a["name"], ("%s %% gegenüber dem Median" % _n(pct)) if pct is not None else "Wert außerhalb der Norm")
-        out["kurz"] = ("%s meldet „%s“ = %d. Median der letzten Läufe: %s (Band %s bis %s). %s in Folge außerhalb (%s)." %
-                       (name, a["anzahl"], o["wert"], _n(o.get("median")), _n(o.get("unten")), _n(o.get("oben")), _l(n), zeitraum))
+        out["kurz"] = ("%s meldet „%s“ = %d. Median der letzten Läufe: %s (Band %s bis %s). %s (%s)." %
+                       (name, a["anzahl"], o["wert"], _n(o.get("median")), _n(o.get("unten")), _n(o.get("oben")),
+                        "Erstmals außerhalb" if n == 1 else "%s in Folge außerhalb" % _l(n), zeitraum))
         if inc.get("frozen_notes"):
             out["kurz"] += " Der Wert ist danach praktisch eingefroren (%d× identisch), vorher schwankte er täglich." % (inc["frozen_notes"] + 1)
         out["ursachen"] = ["Gewollte Änderung (Pipeline bereinigt, Deals geschlossen, neue Stage-Definition)",
@@ -135,16 +136,34 @@ def describe(inc: dict, a: dict, ctx: dict) -> dict:
         out["empfehlung"] = [step("pruefen", "Zeitplan und Aktiv-Schalter von %s prüfen." % a["id"]),
                              step("pruefen", "Lauf einmal manuell starten und Protokoll prüfen.")]
         out["nacharbeit"] = [step("nacharbeit", "Ausgefallenen Lauf nachholen.")]
+    elif code == "RUN_DUPLICATE":
+        o = occ[-1]
+        out["titel"] = "%s: doppelt gelaufen" % a["name"]
+        out["kurz"] = ("%s lief zum selben Soll zweimal, um %s und um %s (im Abstand von %d Sekunden), beide erfolgreich. Das Ergebnis („%s“) ist damit vermutlich doppelt angekommen." %
+                       (name, o.get("vorher_t", "")[11:19], o.get("dieser_t", "")[11:19], o.get("abstand_s", 0), a["liefert"]))
+        out["ursachen"] = ["Szenario zweimal geplant oder zusätzlich manuell gestartet", "Trigger feuert doppelt (z. B. zwei aktive Kopien des Szenarios)",
+                           "Zeitumstellung am Wochenende hat einen Zeitplan verschoben"]
+        out["empfehlung"] = [step("pruefen", "Im Ziel nachsehen, ob Posts und Aufgaben doppelt angelegt wurden."),
+                             step("pruefen", "In Make prüfen, ob es zwei aktive Szenarien oder zwei Zeitpläne für %s gibt." % a["id"]),
+                             step("aendern", "Szenario auf „sequenzielle Verarbeitung“ stellen und doppelte Zeitpläne entfernen.", True)]
+        out["nacharbeit"] = [step("nacharbeit", "Doppelte Einträge entfernen (%s)." % a["liefert"])]
+    elif code == "REF_DUPLICATE":
+        o = occ[-1]
+        out["titel"] = "%s: Ticket #%s erneut gepostet" % (a["name"], o.get("ref"))
+        out["kurz"] = "Ticket #%s wurde bereits am %s gepostet und kam am %s noch einmal. Wiedereröffnet oder doppelt?" % (
+            o.get("ref"), fmt_dt(from_ts(__import__("heartbeat.core", fromlist=["x"]).parse_local(o["vorher_t"]).timestamp())), fmt_dt(first))
+        out["ursachen"] = ["Ticket wurde wiedereröffnet (dann korrekt)", "Trigger hat dasselbe Ticket zweimal geliefert"]
+        out["empfehlung"] = [step("pruefen", "Im Ticketsystem prüfen, ob #%s wiedereröffnet wurde." % o.get("ref"))]
     elif code == "STATUS_WARNING":
         out["titel"] = "%s: Rate-Limit, automatisch wiederholt" % a["name"] if "limit" in occ[0]["detail"].lower() else "%s: Warnung" % a["name"]
         out["kurz"] = "%s meldet eine Warnung: „%s“ (%s)." % (name, occ[0]["detail"], zeitraum)
         out["ursachen"] = ["Zielsystem hat kurz gedrosselt, Retry hat geholfen"]
         out["empfehlung"] = [step("pruefen", "Nur beobachten. Bei Wiederholung zur selben Uhrzeit: Lauf zeitlich entzerren.")]
     elif code == "VOLUME_FROZEN":
-        out["titel"] = "%s: derselbe Wert wie im Lauf davor" % a["name"]
-        out["kurz"] = "%s meldet zweimal in Folge exakt %d (%s)." % (name, occ[0].get("wert", 0), zeitraum)
+        out["titel"] = "%s: Wert bewegt sich nicht mehr" % a["name"]
+        out["kurz"] = "%s meldet %d× in Folge exakt %d (%s)." % (name, occ[-1].get("mal", 3), occ[0].get("wert", 0), zeitraum)
         out["ursachen"] = ["Zufall bei stabilem Bestand", "Abgleich hat nichts Neues verarbeitet (Quelle nicht aktualisiert)"]
-        out["empfehlung"] = [step("pruefen", "Beobachten. Tritt es dreimal in Folge auf, Quelle auf Aktualität prüfen.")]
+        out["empfehlung"] = [step("pruefen", "Quelle auf Aktualität prüfen: Bekommt der Lauf neue Daten oder einen zwischengespeicherten Stand?")]
     elif code == "SILENCE":
         out["titel"] = "%s: ungewöhnlich lange keine Läufe" % a["name"]
         out["kurz"] = "%s: %s." % (name, occ[-1]["detail"])
@@ -167,7 +186,8 @@ def describe_group(children: List[dict], ctx: dict) -> dict:
     names = ", ".join("%s" % c["automation"] for c in sorted(children, key=lambda c: c["automation"]))
     back = ctx.get("device_back")
     first = from_ts(min(c["first_ts"] for c in children))
-    offen = [c for c in children if c["recovered_ts"] is None]
+    offen = [c for c in children if c["recovered_ts"] is None and not c.get("weiter_als")]
+    weiter = [c for c in children if c.get("weiter_als")]
     out = {"titel": "Laptop war offline: %d geplante Läufe ausgefallen" % n}
     out["kurz"] = ("Ab %s lief auf dem Laptop nichts mehr (%s). %s" %
                    (fmt_dt(first), names,
@@ -175,6 +195,8 @@ def describe_group(children: List[dict], ctx: dict) -> dict:
                     else "Er ist noch nicht wieder erreichbar."))
     if back and offen:
         out["kurz"] += " Noch nicht nachgeholt: " + ", ".join(c["automation"] for c in offen) + " (Wochenjobs, nächstes Soll abwarten oder manuell starten)."
+    if back and weiter:
+        out["kurz"] += " " + ", ".join(c["automation"] for c in weiter) + " fehlt auch danach, obwohl der Laptop wieder lief – siehe eigene Meldung."
     out["ursachen"] = ["Laptop ausgeschaltet, zugeklappt oder im Ruhezustand (Make und Cloud liefen im selben Zeitraum normal)",
                        "Nicht angemeldet / gesperrt, geplante Aufgaben starten nicht",
                        "Energiesparen verhindert das Aufwachen zur Soll-Zeit"]

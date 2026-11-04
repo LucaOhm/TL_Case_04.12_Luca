@@ -74,7 +74,8 @@ class Backtest(unittest.TestCase):
         self.assertEqual(t["level"], 3)
 
     def test_keine_fehlalarme(self):
-        erlaubt = {"A02:fehler", "A10:wert", "A09:wert", "A04:fehler", "A07:warnung", "A08:eingefroren"}
+        erlaubt = {"A02:fehler", "A10:wert", "A09:wert", "A04:fehler", "A07:warnung", "A08:eingefroren", "A02:referenz"}
+        self.assertEqual(self.by["A02:referenz"]["level"], 4)  # #48586 zweimal: nur Hinweis im Dashboard
         gefunden = {k for k in self.by}
         self.assertEqual(gefunden - erlaubt, set(), "unerwartete Störungen")
         self.assertEqual(sum(1 for t in self.m["incidents"] if t["id"].startswith("A07:warnung")), 2)
@@ -237,6 +238,47 @@ def make_xlsx(rows, shared=False, extra_first_sheet=True):
 def serial(s):
     from datetime import datetime
     return (datetime.strptime(s, "%Y-%m-%d %H:%M:%S") - datetime(1899, 12, 30)).total_seconds() / 86400.0
+
+
+CSV26 = ROOT / "data" / "laeufe_2026-10-26.csv"
+
+
+@unittest.skipUnless(HAS_DATA and CSV26.exists(), "Läufe vom 26.10. nicht vorhanden")
+class Testlauf26(unittest.TestCase):
+    """Erwartung vorab von Hand aus der Datei abgeleitet, dann gegen das Tool geprüft."""
+    @classmethod
+    def setUpClass(cls):
+        cls.s = fresh()
+        ingest.import_csv(cls.s, CSV26)
+        cls.app = App(cls.s, analyst.Analyst([]))
+        cls.pt = cls.app.points()[-1]
+        cls.m = cls.app.model(parse_local(cls.pt["iso"]))
+        cls.neu = [t for t in cls.m["incidents"] if t["first_iso"] >= "2026-10-26"]
+
+    def ids(self):
+        return sorted((t["automations"][0], t["family"]) for t in self.neu)
+
+    def test_briefing_punkt_27_10(self):
+        self.assertTrue(self.pt["label"].startswith("Di 27.10."))
+        self.assertFalse(self.m["blind"])
+
+    def test_neue_befunde_genau_diese(self):
+        self.assertEqual(self.ids(), [("A01", "doppelt"), ("A02", "referenz"), ("A08", "wert"), ("A17", "wert"), ("A19", "ausfall")])
+
+    def test_a19_eigene_meldung_nicht_im_alten_laptop_ausfall(self):
+        a19 = [t for t in self.neu if t["automations"] == ["A19"]][0]
+        self.assertEqual(a19["kind"], "einzel")
+        self.assertTrue(a19["wiederkehrend"])
+        self.assertIn("Plattform lief, nur diese Aufgabe nicht", [p["titel"] for p in a19["plausibilitaet"]])
+
+    def test_a09_weiter_offen_und_gegenprobe_a15(self):
+        a09 = [t for t in self.m["incidents"] if t["id"].startswith("A09:wert")][0]
+        self.assertEqual((a09["count"], a09["auto_status"]), (7, "offen"))
+        self.assertIn("Gegenprobe über A15", [p["titel"] for p in a09["plausibilitaet"]])
+
+    def test_soll_ist_26_10(self):
+        b = insight.tag_bilanz(self.app.reg, self.m, "daniel", parse_local("2026-10-26 12:00").date())
+        self.assertEqual((b["soll"], b["ist"]), (32, 31))  # Montag: 32 Soll-Läufe, nur A19 fehlt
 
 
 class ExcelImport(unittest.TestCase):
