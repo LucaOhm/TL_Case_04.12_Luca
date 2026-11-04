@@ -3,7 +3,7 @@
 **In einem Satz:** Heartbeat sagt dir jeden Morgen, ob deine Automationen gestern gelaufen sind, und meldet sich sofort, wenn bei Kunden etwas hängt.
 
 > 🎬 **Lieber schauen als lesen?** [Demo-Video ansehen (2:18 Min.)](../ergebnis/Demo-Video_Mitarbeiter.mp4)
-> 👀 **Gleich ausprobieren:** [Online-Vorschau öffnen](https://lucaohm.github.io/TL_Case_04.12_Luca/ergebnis/MVP_mit_26-10.html) → oben rechts „Geführte Tour“
+> 👀 **Gleich ausprobieren:** Repo als ZIP laden und `START.html` öffnen ([so geht's](../README.md#hier-prüfen)) → „MVP: Testlauf 26.10.“ → oben rechts „Geführte Tour“
 
 ---
 

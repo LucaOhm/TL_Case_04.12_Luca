@@ -6,14 +6,21 @@
 
 ## Hier prüfen
 
-**Alles auf einer Seite, ohne Anmeldung:** https://lucaohm.github.io/TL_Case_04.12_Luca/
+**Direkt hier auf GitHub lesen:**
+- 📊 [**Präsentation** (PDF, 7 Folien)](ergebnis/Praesentation_Heartbeat.pdf): Vorgehen, Leitplanken, Aufbau, Ergebnis. Ca. 5 Minuten.
+- 📄 [**Die drei Antworten**](#4-die-drei-antworten) auf die Fragen des Case, hier weiter unten. Ca. 2 Minuten.
 
-| | Was | Zeit |
-|---|---|---|
-| 📊 | [**Präsentation** (PDF, 7 Folien)](ergebnis/Praesentation_Heartbeat.pdf): Vorgehen, Leitplanken, Aufbau, Ergebnis | 5 Min. |
-| 🎬 | [**Demo-Video für Mitarbeiter**](https://lucaohm.github.io/TL_Case_04.12_Luca/#video): So nutzt ein Team Heartbeat im Alltag ([Datei](ergebnis/Demo-Video_Mitarbeiter.mp4)) | 2 Min. |
-| 🖱️ | **MVP ausprobieren:** [Stand bis 25.10.](https://lucaohm.github.io/TL_Case_04.12_Luca/ergebnis/MVP_bis_25-10.html) · [Testlauf 26.10.](https://lucaohm.github.io/TL_Case_04.12_Luca/ergebnis/MVP_mit_26-10.html) (oben rechts „Geführte Tour“) | frei |
-| 📄 | [**Die drei Antworten**](#4-die-drei-antworten) auf die Fragen des Case, hier weiter unten | 2 Min. |
+**MVP und Demo-Video ansehen (ca. 1 Minute Vorbereitung, ohne Installation):**
+
+| Schritt | So geht's |
+|---|---|
+| **1. Herunterladen** | Oben auf dieser Seite den grünen Button **`<> Code`** klicken, dann **„Download ZIP“** |
+| **2. Entpacken** | Die ZIP-Datei doppelklicken |
+| **3. Starten** | Im entpackten Ordner **`START.html`** doppelklicken. Sie öffnet sich im Browser. |
+
+Auf der Startseite liegen beide MVP-Stände (bis 25.10. und Testlauf 26.10.), die Präsentation und das **Demo-Video für Mitarbeiter**. Alles läuft offline, ohne Server und ohne Anmeldung. Im MVP startet oben rechts eine **„Geführte Tour“**.
+
+<sub>Nur eine Datei gewünscht? In [`ergebnis/`](ergebnis/) die Datei anklicken und oben rechts **„Download raw file“** wählen. Danach doppelklicken.</sub>
 
 ---
 
@@ -93,11 +100,11 @@ Weiter offen ist der **Team-Report** (−16 %). Die Gegenprobe zeigt, dass es am
 
 | Ordner | Inhalt |
 |---|---|
-| [`ergebnis/`](ergebnis/) | Präsentation, Demo-Video für Mitarbeiter, MVP als HTML-Datei (zwei Stände, öffnen per Doppelklick) |
+| [`ergebnis/`](ergebnis/) | Präsentation, Demo-Video für Mitarbeiter, MVP als HTML-Datei (zwei Stände) |
 | [`docs/`](docs/) | [Aufgabe](docs/aufgabe.md) · [Analyse](docs/analyse.md) · [Testlauf 26.10.](docs/testlauf-26-10.md) · [Onboarding](docs/onboarding.md) · [Betrieb & Sicherheit](docs/betrieb.md) |
 | [`data/`](data/) | Eingangsdaten (anonymisiert): 22 Automationen, Läufe 12.–25.10., Läufe 26.10. |
 | [`src/`](src/) · [`tests/`](tests/) | MVP-Code (Python, nur Standardbibliothek) und 46 automatische Tests |
-| `index.html` | Öffentliche Startseite (GitHub Pages) |
+| `START.html` | Startseite für alles, per Doppelklick nach dem Download |
 
 Lokal starten (Python 3.9+, keine Pakete nötig):
 
